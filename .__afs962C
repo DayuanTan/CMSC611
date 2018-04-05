@@ -1,0 +1,1668 @@
+version: 1
+creator: callgrind-3.8.1
+pid: 15698
+cmd:  ./a.out
+part: 48
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 9761086 - 9776853
+desc: Trigger: Program termination
+
+positions: line
+events: Ir
+summary: 95540
+
+
+ob=(7) /usr/lib64/libstdc++.so.6.0.13
+fl=(7) ???
+fn=(908) operator new(unsigned long)
+0 630
+cob=(3) /lib64/libc-2.12.so
+cfi=(3) ???
+cfn=(842) malloc
+calls=70 0 
+0 8811
+0 420
+
+fn=(1194) operator delete(void*)
+0 204
+cob=(3)
+cfi=(3)
+cfn=(1200) free
+calls=68 0 
+0 5712
+
+ob=(8) /afs/umbc.edu/users/p/a/palkpon1/home/CMSC611/a.out
+fl=(12) /usr/include/c++/4.8/bits/allocator.h
+fn=(1540) std::allocator<float>::allocator(std::allocator<float> const&)
+115 155
++1 155
+cfi=(13) /usr/include/c++/4.8/ext/new_allocator.h
+cfn=(1542) __gnu_cxx::new_allocator<float>::new_allocator(__gnu_cxx::new_allocator<float> const&)
+calls=31 -35 
+* 186
+* 62
+
+fn=(1586) std::allocator<float>::~allocator()
+121 210
+cfi=(13)
+cfn=(1588) __gnu_cxx::new_allocator<float>::~new_allocator()
+calls=30 -35 
+* 150
+* 60
+
+fn=(1596) std::allocator<int>::~allocator()
+121 210
+cfi=(13)
+cfn=(1598) __gnu_cxx::new_allocator<int>::~new_allocator()
+calls=30 -35 
+* 150
+* 60
+
+fn=(1498) std::allocator<int>::allocator(std::allocator<int> const&)
+115 155
++1 155
+cfi=(13)
+cfn=(1500) __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&)
+calls=31 -35 
+* 186
+* 62
+
+fl=(18) /usr/include/c++/4.8/new
+fn=(1246) operator new(unsigned long, void*)
+110 210
+
+fl=(14) /usr/include/c++/4.8/bits/stl_iterator.h
+fn=(1228) __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&)
+896 24
++2 12
+cfn=(1230) __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const
+calls=4 790 
+* 24
+* 20
+cfn=(1230)
+calls=4 790 
+* 24
+* 32
+
+fn=(1528) __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const
+790 186
++1 186
+
+fn=(1302) __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >::__normal_iterator(float* const&)
+726 80
+
+fn=(1320) __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >::difference_type __gnu_cxx::operator-<float*, std::vector<float, std::allocator<float> > >(__gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > > const&, __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > > const&)
+896 24
++2 12
+cfn=(1322) __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >::base() const
+calls=4 790 
+* 24
+* 20
+cfn=(1322)
+calls=4 790 
+* 24
+* 32
+
+fn=(1548) __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >::__normal_iterator(float const* const&)
+726 620
+
+fn=(1208) __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&)
+726 80
+
+fn=(1230)
+790 48
++1 48
+
+fn=(1506) __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&)
+726 620
+
+fn=(1570) __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >::base() const
+790 186
++1 186
+
+fn=(1322)
+790 48
++1 48
+
+fl=(19) /usr/include/c++/4.8/bits/stl_uninitialized.h
+fn=(1254) int* std::uninitialized_copy<int*, int*>(int*, int*, int*)
+107 48
++10 48
+cfn=(1256) int* std::__uninitialized_copy<true>::__uninit_copy<int*, int*>(int*, int*, int*)
+calls=8 -26 
+* 1696
++1 16
+
+fn=(1256)
+91 48
++2 48
+cfi=(17) /usr/include/c++/4.8/bits/stl_algobase.h
+cfn=(1258) int* std::copy<int*, int*>(int*, int*, int*)
+calls=8 450 
+* 1584
+* 16
+
+fn=(1252) int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&)
+256 56
++2 48
+cfn=(1254)
+calls=8 107 
+* 1808
+* 16
+
+fn=(1552) float* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*, float>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*, std::allocator<float>&)
+256 217
++2 186
+cfn=(1554) float* std::uninitialized_copy<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=31 107 
+* 9167
+* 62
+
+fn=(1554)
+107 186
++10 186
+cfn=(1556) float* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=31 -26 
+* 8733
++1 62
+
+fn=(1342) float* std::__uninitialized_copy<true>::__uninit_copy<float*, float*>(float*, float*, float*)
+91 48
++2 48
+cfi=(17)
+cfn=(1344) float* std::copy<float*, float*>(float*, float*, float*)
+calls=8 450 
+* 1584
+* 16
+
+fn=(1510) int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&)
+256 217
++2 186
+cfn=(1512) int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+calls=31 107 
+* 9167
+* 62
+
+fn=(1556)
+91 186
++2 186
+cfi=(17)
+cfn=(1558) float* std::copy<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=31 450 
+* 8299
+* 62
+
+fn=(1338) float* std::__uninitialized_copy_a<float*, float*, float>(float*, float*, float*, std::allocator<float>&)
+256 56
++2 48
+cfn=(1340) float* std::uninitialized_copy<float*, float*>(float*, float*, float*)
+calls=8 107 
+* 1808
+* 16
+
+fn=(1514) int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+91 186
++2 186
+cfi=(17)
+cfn=(1516) int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+calls=31 450 
+* 8299
+* 62
+
+fn=(1336) float* std::__uninitialized_move_if_noexcept_a<float*, float*, std::allocator<float> >(float*, float*, float*, std::allocator<float>&)
+274 56
++7 48
+cfn=(1338)
+calls=8 -25 
+* 1928
++1 16
+
+fn=(1340)
+107 48
++10 48
+cfn=(1342)
+calls=8 -26 
+* 1696
++1 16
+
+fn=(1512)
+107 186
++10 186
+cfn=(1514)
+calls=31 -26 
+* 8733
++1 62
+
+fn=(1250) int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+274 56
++7 48
+cfn=(1252)
+calls=8 -25 
+* 1928
++1 16
+
+fl=(11) /usr/include/c++/4.8/bits/stl_vector.h
+fn=(1306) std::vector<float, std::allocator<float> >::_M_check_len(unsigned long, char const*) const
+1336 28
++2 12
+cfn=(1308) std::vector<float, std::allocator<float> >::max_size() const
+calls=4 650 
+* 128
+* 16
+cfn=(1316) std::vector<float, std::allocator<float> >::size() const
+calls=4 645 
+* 52
+* 28
++3 12
+cfn=(1316)
+calls=4 645 
+* 52
+* 16
+cfn=(1316)
+calls=4 645 
+* 52
+* 24
+cfi=(17)
+cfn=(1224) unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+calls=4 216 
+* 52
+* 12
++1 12
+cfn=(1316)
+calls=4 645 
+* 52
+* 20
+cfn=(1308)
+calls=4 650 
+* 128
+* 12
++1 16
+
+fn=(1502) std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long)
+179 155
++2 155
+cfn=(1232) std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+calls=31 -14 
+* 5100
+* 62
++1 124
++1 217
++1 62
+
+fn=(1582) std::_Vector_base<float, std::allocator<float> >::~_Vector_base()
+159 150
++2 330
+-1 120
+cfn=(1364) std::_Vector_base<float, std::allocator<float> >::_M_deallocate(float*, unsigned long)
+calls=30 +11 
+* 3420
++1 90
+cfn=(1584) std::_Vector_base<float, std::allocator<float> >::_Vector_impl::~_Vector_impl()
+calls=30 -82 
+* 690
+* 150
+
+fn=(1214) std::vector<int, std::allocator<int> >::max_size() const
+650 32
++1 24
+cfn=(1216) std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+calls=8 117 
+* 48
+* 16
+cfi=(16) /usr/include/c++/4.8/ext/alloc_traits.h
+cfn=(1218) __gnu_cxx::__alloc_traits<std::allocator<int> >::max_size(std::allocator<int> const&)
+calls=8 221 
+* 120
+* 16
+
+fn=(1216)
+117 117
++1 117
+
+fn=(1226) std::vector<int, std::allocator<int> >::begin()
+538 16
++1 20
+cfi=(14)
+cfn=(1208)
+calls=4 726 
+* 40
+* 12
+
+fn=(1278) std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+171 204
++2 68
++1 204
+cfi=(13)
+cfn=(1374) __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+calls=34 -65 
+* 3332
++1 68
+
+fn=(1298) std::vector<float, std::allocator<float> >::push_back(float const&)
+901 75
++2 90
++3 33
+-1 44
+cfi=(16)
+cfn=(1330) void __gnu_cxx::__alloc_traits<std::allocator<float> >::construct<float>(std::allocator<float>&, float*, float const&)
+calls=11 215 
+* 418
++2 66
++6 12
+cfn=(1300) std::vector<float, std::allocator<float> >::end()
+calls=4 556 
+* 92
+* 24
+cfi=(15) /usr/include/c++/4.8/bits/vector.tcc
+cfn=(1304) std::vector<float, std::allocator<float> >::_M_insert_aux(__gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >, float const&)
+calls=4 318 
+* 5119
++2 30
+
+fn=(1318) std::vector<float, std::allocator<float> >::begin()
+538 16
++1 20
+cfi=(14)
+cfn=(1302)
+calls=4 726 
+* 40
+* 12
+
+fn=(1584)
+79 210
+cfi=(12)
+cfn=(1586)
+calls=30 +42 
+* 420
+* 60
+
+fn=(1590) std::vector<int, std::allocator<int> >::~vector()
+414 150
++2 90
+cfn=(1248) std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+calls=30 113 
+* 180
+* 150
+-1 90
+cfi=(21) /usr/include/c++/4.8/bits/stl_construct.h
+cfn=(1272) void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+calls=30 148 
+* 930
++1 90
+cfn=(1592) std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+calls=30 159 
+* 4950
+* 150
+
+fn=(1594) std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+79 210
+cfi=(12)
+cfn=(1596)
+calls=30 +42 
+* 420
+* 60
+
+fn=(1206) std::vector<int, std::allocator<int> >::end()
+556 16
++1 24
+cfi=(14)
+cfn=(1208)
+calls=4 726 
+* 40
+* 12
+
+fn=(1222) std::vector<int, std::allocator<int> >::size() const
+645 231
++1 770
+
+fn=(1232)
+167 175
+0 280
+fi=(8) ???
+cfi=(13)
+cfn=(1236) __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+calls=35 99 
+0 6239
+0 105
+
+fn=(1248)
+113 219
++1 219
+
+fn=(1300)
+556 16
++1 24
+cfi=(14)
+cfn=(1302)
+calls=4 726 
+* 40
+* 12
+
+fn=(1366) std::vector<int, std::allocator<int> >::operator[](unsigned long)
+770 1740
++1 3045
+
+fn=(1546) std::vector<float, std::allocator<float> >::end() const
+565 124
++1 248
+cfi=(14)
+cfn=(1548)
+calls=31 726 
+* 310
+* 93
+
+fn=(1308)
+650 32
++1 24
+cfn=(1310) std::_Vector_base<float, std::allocator<float> >::_M_get_Tp_allocator() const
+calls=8 117 
+* 48
+* 16
+cfi=(16)
+cfn=(1312) __gnu_cxx::__alloc_traits<std::allocator<float> >::max_size(std::allocator<float> const&)
+calls=8 221 
+* 120
+* 16
+
+fn=(1310)
+117 117
++1 117
+
+fn=(1316)
+645 417
++1 1390
+
+fn=(1494) std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&)
+134 217
++1 155
+cfn=(1496) std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+calls=31 -45 
+* 1116
++1 155
+cfn=(1502)
+calls=31 +43 
+* 5875
+* 155
+
+fn=(1496)
+90 155
++1 155
+cfi=(12)
+cfn=(1498)
+calls=31 +24 
+* 558
+* 186
++1 62
+
+fn=(1504) std::vector<int, std::allocator<int> >::end() const
+565 124
++1 248
+cfi=(14)
+cfn=(1506)
+calls=31 726 
+* 310
+* 93
+
+fn=(1532) std::vector<float, std::allocator<float> >::vector(std::vector<float, std::allocator<float> > const&)
+310 248
++2 93
+cfn=(1310)
+calls=31 117 
+* 186
+* 62
+cfi=(16)
+cfn=(1534) __gnu_cxx::__alloc_traits<std::allocator<float> >::_S_select_on_copy(std::allocator<float> const&)
+calls=31 -88 
+* 186
+* 124
+cfn=(1316)
+calls=31 645 
+* 403
+* 186
+cfn=(1536) std::_Vector_base<float, std::allocator<float> >::_Vector_base(unsigned long, std::allocator<float> const&)
+calls=31 134 
+* 7730
++4 93
+cfn=(1334) std::_Vector_base<float, std::allocator<float> >::_M_get_Tp_allocator()
+calls=31 113 
+* 186
+* 186
+cfn=(1546)
+calls=31 565 
+* 775
+* 124
+cfn=(1550) std::vector<float, std::allocator<float> >::begin() const
+calls=31 547 
+* 775
+* 155
+cfi=(19)
+cfn=(1552)
+calls=31 -60 
+* 9632
+-3 93
++4 186
+
+fn=(1544) std::_Vector_base<float, std::allocator<float> >::_M_create_storage(unsigned long)
+179 155
++2 155
+cfn=(1324) std::_Vector_base<float, std::allocator<float> >::_M_allocate(unsigned long)
+calls=31 -14 
+* 5157
+* 62
++1 124
++1 217
++1 62
+
+fn=(1576) std::vector<float, std::allocator<float> >::operator[](unsigned long)
+770 1740
++1 3045
+
+fn=(1592)
+159 150
++2 330
+-1 120
+cfn=(1278)
+calls=30 +11 
+* 3420
++1 90
+cfn=(1594)
+calls=30 -82 
+* 690
+* 150
+
+fn=(1204) std::vector<int, std::allocator<int> >::push_back(int const&)
+901 75
++2 90
++3 33
+-1 44
+cfi=(16)
+cfn=(1242) void __gnu_cxx::__alloc_traits<std::allocator<int> >::construct<int>(std::allocator<int>&, int*, int const&)
+calls=11 215 
+* 418
++2 66
++6 12
+cfn=(1206)
+calls=4 556 
+* 92
+* 24
+cfi=(15)
+cfn=(1210) std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+calls=4 318 
+* 6043
++2 30
+
+fn=(1324)
+167 175
+0 280
+fi=(8)
+cfi=(13)
+cfn=(1328) __gnu_cxx::new_allocator<float>::allocate(unsigned long, void const*)
+calls=35 99 
+0 5372
+0 105
+
+fn=(1364)
+171 204
++2 68
++1 204
+cfi=(13)
+cfn=(1380) __gnu_cxx::new_allocator<float>::deallocate(float*, unsigned long)
+calls=34 -65 
+* 3332
++1 68
+
+fn=(1334)
+113 219
++1 219
+
+fn=(1550)
+547 124
++1 248
+cfi=(14)
+cfn=(1548)
+calls=31 726 
+* 310
+* 93
+
+fn=(1580) std::vector<float, std::allocator<float> >::~vector()
+414 150
++2 90
+cfn=(1334)
+calls=30 113 
+* 180
+* 150
+-1 90
+cfi=(21)
+cfn=(1358) void std::_Destroy<float*, float>(float*, float*, std::allocator<float>&)
+calls=30 148 
+* 930
++1 90
+cfn=(1582)
+calls=30 159 
+* 4950
+* 150
+
+fn=(1212) std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const
+1336 28
++2 12
+cfn=(1214)
+calls=4 650 
+* 128
+* 16
+cfn=(1222)
+calls=4 645 
+* 52
+* 28
++3 12
+cfn=(1222)
+calls=4 645 
+* 52
+* 16
+cfn=(1222)
+calls=4 645 
+* 52
+* 24
+cfi=(17)
+cfn=(1224)
+calls=4 216 
+* 52
+* 12
++1 12
+cfn=(1222)
+calls=4 645 
+* 52
+* 20
+cfn=(1214)
+calls=4 650 
+* 128
+* 12
++1 16
+
+fn=(1508) std::vector<int, std::allocator<int> >::begin() const
+547 124
++1 248
+cfi=(14)
+cfn=(1506)
+calls=31 726 
+* 310
+* 93
+
+fn=(1536)
+134 217
++1 155
+cfn=(1538) std::_Vector_base<float, std::allocator<float> >::_Vector_impl::_Vector_impl(std::allocator<float> const&)
+calls=31 -45 
+* 1116
++1 155
+cfn=(1544)
+calls=31 +43 
+* 5932
+* 155
+
+fn=(1538)
+90 155
++1 155
+cfi=(12)
+cfn=(1540)
+calls=31 +24 
+* 558
+* 186
++1 62
+
+fn=(1490) std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+310 248
++2 93
+cfn=(1216)
+calls=31 117 
+* 186
+* 62
+cfi=(16)
+cfn=(1492) __gnu_cxx::__alloc_traits<std::allocator<int> >::_S_select_on_copy(std::allocator<int> const&)
+calls=31 -88 
+* 186
+* 124
+cfn=(1222)
+calls=31 645 
+* 403
+* 186
+cfn=(1494)
+calls=31 134 
+* 7673
++4 93
+cfn=(1248)
+calls=31 113 
+* 186
+* 186
+cfn=(1504)
+calls=31 565 
+* 775
+* 124
+cfn=(1508)
+calls=31 547 
+* 775
+* 155
+cfi=(19)
+cfn=(1510)
+calls=31 -60 
+* 9632
+-3 93
++4 186
+
+fl=(15)
+fn=(1304)
+318 32
++4 24
++21 20
+cfi=(11)
+cfn=(1306)
+calls=4 1336 
+* 724
+* 4
++1 12
+cfi=(11)
+cfn=(1318)
+calls=4 538 
+* 88
+* 24
+cfi=(14)
+cfn=(1320)
+calls=4 896 
+* 136
+* 4
++1 20
+cfi=(11)
+cfn=(1324)
+calls=4 167 
+* 775
+* 4
++1 8
++12 20
+-5 16
+cfi=(16)
+cfn=(1330)
+calls=4 215 
+* 152
++7 4
++5 12
+cfi=(11)
+cfn=(1334)
+calls=4 113 
+* 24
+* 16
+cfi=(14)
+cfn=(1322)
+calls=4 790 
+* 24
+* 12
+-3 16
+cfi=(19)
+cfn=(1336)
+calls=4 -88 
+* 1176
+* 4
++5 4
++5 12
+cfi=(11)
+cfn=(1334)
+calls=4 113 
+* 24
+* 24
+cfi=(14)
+cfn=(1322)
+calls=4 790 
+* 24
+* 4
+-3 20
+cfi=(19)
+cfn=(1336)
+calls=4 -95 
+* 872
+* 4
++16 12
+cfi=(11)
+cfn=(1334)
+calls=4 113 
+* 24
+* 20
+-1 12
+cfi=(21)
+cfn=(1358)
+calls=4 148 
+* 124
++4 48
+-2 12
+cfi=(11)
+cfn=(1364)
+calls=4 171 
+* 456
++3 12
++1 12
++1 24
++2 24
+
+fn=(1210)
+318 32
++4 24
++21 20
+cfi=(11)
+cfn=(1212)
+calls=4 1336 
+* 724
+* 4
++1 12
+cfi=(11)
+cfn=(1226)
+calls=4 538 
+* 88
+* 24
+cfi=(14)
+cfn=(1228)
+calls=4 896 
+* 136
+* 4
++1 20
+cfi=(11)
+cfn=(1232)
+calls=4 167 
+* 1699
+* 4
++1 8
++12 20
+-5 16
+cfi=(16)
+cfn=(1242)
+calls=4 215 
+* 152
++7 4
++5 12
+cfi=(11)
+cfn=(1248)
+calls=4 113 
+* 24
+* 16
+cfi=(14)
+cfn=(1230)
+calls=4 790 
+* 24
+* 12
+-3 16
+cfi=(19)
+cfn=(1250)
+calls=4 -88 
+* 1176
+* 4
++5 4
++5 12
+cfi=(11)
+cfn=(1248)
+calls=4 113 
+* 24
+* 24
+cfi=(14)
+cfn=(1230)
+calls=4 790 
+* 24
+* 4
+-3 20
+cfi=(19)
+cfn=(1250)
+calls=4 -95 
+* 872
+* 4
++16 12
+cfi=(11)
+cfn=(1248)
+calls=4 113 
+* 24
+* 20
+-1 12
+cfi=(21)
+cfn=(1272)
+calls=4 148 
+* 124
++4 48
+-2 12
+cfi=(11)
+cfn=(1278)
+calls=4 171 
+* 456
++3 12
++1 12
++1 24
++2 24
+
+fl=(13)
+fn=(1220) __gnu_cxx::new_allocator<int>::max_size() const
+113 129
++1 129
+
+fn=(1332) __gnu_cxx::new_allocator<float>::construct(float*, float const&)
+129 90
++1 60
+cfi=(18)
+cfn=(1246)
+calls=15 -20 
+* 105
+* 105
+
+fn=(1236)
+99 210
++2 105
+cfn=(1220)
+calls=35 +12 
+* 210
+* 140
++3 140
+cob=(7)
+cfi=(7)
+cfn=(908)
+calls=35 0 
+* 5364
++1 70
+
+fn=(1588)
+86 150
+
+fn=(1598)
+86 150
+
+fn=(1542)
+81 186
+
+fn=(1328)
+99 210
++2 105
+cfn=(1314) __gnu_cxx::new_allocator<float>::max_size() const
+calls=35 +12 
+* 210
+* 140
++3 140
+cob=(7)
+cfi=(7)
+cfn=(908)
+calls=35 0 
+* 4497
++1 70
+
+fn=(1374)
+109 204
++1 102
+cob=(7)
+cfi=(7)
+cfn=(1194)
+calls=34 0 
+* 2958
+* 68
+
+fn=(1244) __gnu_cxx::new_allocator<int>::construct(int*, int const&)
+129 90
++1 60
+cfi=(18)
+cfn=(1246)
+calls=15 -20 
+* 105
+* 105
+
+fn=(1380)
+109 204
++1 102
+cob=(7)
+cfi=(7)
+cfn=(1194)
+calls=34 0 
+* 2958
+* 68
+
+fn=(1314)
+113 129
++1 129
+
+fn=(1500)
+81 186
+
+fl=(21)
+fn=(1274) void std::_Destroy<int*>(int*, int*)
+122 170
++4 170
+cfn=(1276) void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+calls=34 -14 
+* 204
++2 68
+
+fn=(1362) void std::_Destroy_aux<true>::__destroy<float*>(float*, float*)
+112 204
+
+fn=(1272)
+148 204
++3 170
+cfn=(1274)
+calls=34 -29 
+* 612
++1 68
+
+fn=(1358)
+148 204
++3 170
+cfn=(1360) void std::_Destroy<float*>(float*, float*)
+calls=34 -29 
+* 612
++1 68
+
+fn=(1360)
+122 170
++4 170
+cfn=(1362)
+calls=34 -14 
+* 204
++2 68
+
+fn=(1276)
+112 204
+
+fl=(9) /home/paul878934/CMSC611/lin.cpp
+fn=(1578) get_b1(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >)
+12 75
++1 45
+cfi=(11)
+cfn=(1316)
+calls=15 645 
+* 195
+* 30
++1 60
++1 60
++2 30
++1 810
+cfi=(11)
+cfn=(1576)
+calls=135 770 
+* 1485
+* 540
++1 810
+cfi=(11)
+cfn=(1366)
+calls=135 770 
+* 1485
+* 675
+-2 735
++4 105
++1 105
++1 30
++1 810
+cfi=(11)
+cfn=(1366)
+calls=135 770 
+* 1485
+* 540
++1 810
+cfi=(11)
+cfn=(1576)
+calls=135 770 
+* 1485
+* 405
++1 675
++1 675
+-4 735
++6 45
++2 15
++1 60
+
+fn=(1600) get_b0(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >, float)
+33 90
++1 45
+cfi=(11)
+cfn=(1316)
+calls=15 645 
+* 195
+* 30
++1 60
++2 30
++1 810
+cfi=(11)
+cfn=(1576)
+calls=135 770 
+* 1485
+* 540
++1 810
+cfi=(11)
+cfn=(1366)
+calls=135 770 
+* 1485
+* 675
+-2 735
++4 105
++1 105
++1 90
++2 15
++1 60
+
+fn=(1575) output(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >, std::string)'2
+60 3
++1 1
++3 80
+cfi=(11)
+cfn=(1490)
+calls=16 310 
+* 11150
+* 80
+cfi=(11)
+cfn=(1532)
+calls=16 310 
+* 11207
+* 75
+cfn=(1578)
+calls=15 -52 
+* 15015
+* 90
+cfi=(11)
+cfn=(1580)
+calls=15 414 
+* 3390
+* 45
+cfi=(11)
+cfn=(1590)
+calls=15 414 
+* 3390
++2 75
+cfi=(11)
+cfn=(1490)
+calls=15 310 
+* 10216
+* 75
+cfi=(11)
+cfn=(1532)
+calls=15 310 
+* 10216
+* 120
+cfn=(1600)
+calls=15 -33 
+* 7365
+* 90
+cfi=(11)
+cfn=(1580)
+calls=15 414 
+* 3390
+* 45
+cfi=(11)
+cfn=(1590)
+calls=15 414 
+* 3390
++2 45
+cfi=(11)
+cfn=(1316)
+calls=15 645 
+* 195
+* 120
+cfi=(11)
+cfn=(1576)
+calls=15 770 
+* 165
+* 75
+cfi=(11)
+cfn=(1298)
+calls=15 901 
+* 6003
++1 45
+cfi=(11)
+cfn=(1222)
+calls=15 645 
+* 195
+* 120
+cfi=(11)
+cfn=(1366)
+calls=15 770 
+* 165
+* 75
+cfi=(11)
+cfn=(1204)
+calls=15 901 
+* 6927
++1 45
+cfi=(11)
+cfn=(1222)
+calls=15 645 
+* 195
+* 120
+cfi=(11)
+cfn=(1366)
+calls=15 770 
+* 165
+* 75
++1 45
+cfi=(11)
+cfn=(1316)
+calls=15 645 
+* 195
+* 120
+cfi=(11)
+cfn=(1576)
+calls=15 770 
+* 165
+* 90
++2 15
+-12 96
+cfi=(11)
+cfn=(1316)
+calls=16 645 
+* 208
+* 64
+cfi=(11)
+cfn=(1316)
+calls=16 645 
+* 208
+* 96
+
+fl=(20) /usr/include/c++/4.8/bits/stl_iterator_base_types.h
+fn=(1348) std::_Iter_base<float*, false>::_S_base(float*)
+212 213
++1 213
+
+fn=(1526) std::_Iter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+220 248
++1 186
+cfi=(14)
+cfn=(1528)
+calls=62 790 
+* 372
+* 186
+
+fn=(1262) std::_Iter_base<int*, false>::_S_base(int*)
+212 213
++1 213
+
+fn=(1562) std::_Iter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, false>::_S_base(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+212 186
++1 186
+
+fn=(1520) std::_Iter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, false>::_S_base(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+212 186
++1 186
+
+fn=(1568) std::_Iter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, true>::_S_base(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+220 248
++1 186
+cfi=(14)
+cfn=(1570)
+calls=62 790 
+* 372
+* 186
+
+fl=(17)
+fn=(1270) int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+368 234
++2 234
++1 78
++1 245
+cob=(3)
+cfi=(3)
+cfn=(1372) memmove
+calls=35 0 
+* 2778
++1 156
++1 78
+
+fn=(1224)
+216 32
++5 48
++2 8
++1 16
+
+fn=(1258)
+450 56
++10 24
+cfn=(1260) std::_Miter_base<int*>::iterator_type std::__miter_base<int*>(int*)
+calls=8 288 
+* 120
+* 32
+cfn=(1260)
+calls=8 288 
+* 120
+* 32
+cfn=(1264) int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*)
+calls=8 -36 
+* 1168
++1 32
+
+fn=(1260)
+288 64
++1 48
+cfi=(20)
+cfn=(1262)
+calls=16 -77 
+* 96
+* 32
+
+fn=(1524) std::_Niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+277 248
++1 186
+cfi=(20)
+cfn=(1526)
+calls=62 -58 
+* 992
+* 124
+
+fn=(1266) std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*)
+277 220
++1 165
+cfi=(20)
+cfn=(1262)
+calls=55 -66 
+* 330
+* 110
+
+fn=(1344)
+450 56
++10 24
+cfn=(1346) std::_Miter_base<float*>::iterator_type std::__miter_base<float*>(float*)
+calls=8 288 
+* 120
+* 32
+cfn=(1346)
+calls=8 288 
+* 120
+* 32
+cfn=(1350) float* std::__copy_move_a2<false, float*, float*>(float*, float*, float*)
+calls=8 -36 
+* 1168
++1 32
+
+fn=(1352) std::_Niter_base<float*>::iterator_type std::__niter_base<float*>(float*)
+277 220
++1 165
+cfi=(20)
+cfn=(1348)
+calls=55 -66 
+* 330
+* 110
+
+fn=(1518) std::_Miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+288 248
++1 186
+cfi=(20)
+cfn=(1520)
+calls=62 -77 
+* 372
+* 124
+
+fn=(1558)
+450 217
++10 93
+cfn=(1560) std::_Miter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+calls=31 288 
+* 465
+* 124
+cfn=(1560)
+calls=31 288 
+* 465
+* 124
+cfn=(1564) float* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=31 -36 
+* 6687
++1 124
+
+fn=(1350)
+424 64
++4 24
+cfn=(1352)
+calls=8 277 
+* 120
+* 32
+cfn=(1352)
+calls=8 277 
+* 120
+* 32
+cfn=(1352)
+calls=8 277 
+* 120
+* 32
+cfn=(1354) float* std::__copy_move_a<false, float*, float*>(float*, float*, float*)
+calls=8 -49 
+* 584
++1 40
+
+fn=(1356) float* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<float>(float const*, float const*, float*)
+368 234
++2 234
++1 78
++1 245
+cob=(3)
+cfi=(3)
+cfn=(1372)
+calls=35 0 
+* 2778
++1 156
++1 78
+
+fn=(1560)
+288 248
++1 186
+cfi=(20)
+cfn=(1562)
+calls=62 -77 
+* 372
+* 124
+
+fn=(1566) std::_Niter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+277 248
++1 186
+cfi=(20)
+cfn=(1568)
+calls=62 -58 
+* 992
+* 124
+
+fn=(1572) float* std::__copy_move_a<false, float const*, float*>(float const*, float const*, float*)
+379 186
++8 31
++3 186
+cfn=(1356)
+calls=31 -22 
+* 3339
++1 62
+
+fn=(1268) int* std::__copy_move_a<false, int*, int*>(int*, int*, int*)
+379 48
++8 8
++3 48
+cfn=(1270)
+calls=8 -22 
+* 464
++1 16
+
+fn=(1346)
+288 64
++1 48
+cfi=(20)
+cfn=(1348)
+calls=16 -77 
+* 96
+* 32
+
+fn=(1354)
+379 48
++8 8
++3 48
+cfn=(1356)
+calls=8 -22 
+* 464
++1 16
+
+fn=(1516)
+450 217
++10 93
+cfn=(1518)
+calls=31 288 
+* 465
+* 124
+cfn=(1518)
+calls=31 288 
+* 465
+* 124
+cfn=(1522) int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+calls=31 -36 
+* 6687
++1 124
+
+fn=(1530) int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*)
+379 186
++8 31
++3 186
+cfn=(1270)
+calls=31 -22 
+* 3339
++1 62
+
+fn=(1264)
+424 64
++4 24
+cfn=(1266)
+calls=8 277 
+* 120
+* 32
+cfn=(1266)
+calls=8 277 
+* 120
+* 32
+cfn=(1266)
+calls=8 277 
+* 120
+* 32
+cfn=(1268)
+calls=8 -49 
+* 584
++1 40
+
+fn=(1522)
+424 248
++4 93
+cfn=(1266)
+calls=31 277 
+* 465
+* 124
+cfn=(1524)
+calls=31 277 
+* 775
+* 124
+cfn=(1524)
+calls=31 277 
+* 775
+* 124
+cfn=(1530)
+calls=31 -49 
+* 3804
++1 155
+
+fn=(1564)
+424 248
++4 93
+cfn=(1352)
+calls=31 277 
+* 465
+* 124
+cfn=(1566)
+calls=31 277 
+* 775
+* 124
+cfn=(1566)
+calls=31 277 
+* 775
+* 124
+cfn=(1572)
+calls=31 -49 
+* 3804
++1 155
+
+fl=(16)
+fn=(1218)
+221 32
++1 24
+cfi=(13)
+cfn=(1220)
+calls=8 113 
+* 48
+* 16
+
+fn=(1242)
+215 90
++1 90
+cfi=(13)
+cfn=(1244)
+calls=15 -87 
+* 360
+* 30
+
+fn=(1330)
+215 90
++1 90
+cfi=(13)
+cfn=(1332)
+calls=15 -87 
+* 360
+* 30
+
+fn=(1312)
+221 32
++1 24
+cfi=(13)
+cfn=(1314)
+calls=8 113 
+* 48
+* 16
+
+fn=(1492)
+224 186
+
+fn=(1534)
+224 186
+
+ob=(3)
+fl=(3)
+fn=(1202) _int_free
+0 4692
+
+fn=(866) alloc_perturb
+0 44
+
+fn=(1200)
+0 1020
+cfn=(1202)
+calls=68 0 
+0 4692
+
+fn=(1372)
+0 4056
+cfn=(1382) _wordcopy_fwd_aligned
+calls=60 0 
+0 1440
+0 60
+
+fn=(854) _int_malloc
+0 4667
+cfn=(866)
+calls=2 0 
+0 8
+0 128
+cfn=(866)
+calls=8 0 
+0 32
+0 1030
+cfn=(866)
+calls=1 0 
+0 4
+0 2
+
+fn=(1382)
+0 1440
+
+fn=(842)
+0 1330
+cfn=(854)
+calls=70 0 
+0 5871
+0 1610
+
+totals: 95540

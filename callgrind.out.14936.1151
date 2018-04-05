@@ -1,0 +1,4986 @@
+version: 1
+creator: callgrind-3.8.1
+pid: 14936
+cmd:  ./a.out
+part: 1151
+
+
+desc: I1 cache: 32768 B, 64 B, 8-way associative
+desc: D1 cache: 32768 B, 64 B, 8-way associative
+desc: LL cache: 20971520 B, 64 B, 20-way associative
+
+desc: Timerange: Basic block 1419875375 - 1421704575
+desc: Trigger: Client Request
+
+positions: instr line
+events: Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw Bc Bcm Bi Bim
+summary: 0
+
+
+ob=(4) /afs/umbc.edu/users/p/a/palkpon1/home/CMSC611/a.out
+fl=(12) /usr/include/c++/4.8/bits/stl_algobase.h
+fn=(62) std::_Niter_base<int*>::iterator_type std::__niter_base<int*>(int*)
+0x40492d 277 904 0 904 1 0 0 1
++1 * 904
++3 * 904
++4 * 904 0 904
++4 +1 904 904
++4 * 904
++3 * 904 0 904 1 0 0 1
+cfi=(13) /usr/include/c++/4.8/bits/stl_iterator_base_types.h
+cfn=(64) std::_Iter_base<int*, false>::_S_base(int*)
+calls=904 -33 -66 
+* * 5424 2712 1808
++5 * 904 904
++1 * 904 904
+
+fn=(66) std::_Niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+0x404d9d 277 1712 0 1712
++1 * 1712
++3 * 1712
++4 * 1712 0 1712
++4 +1 1712 1712
++4 * 1712
++3 * 1712 0 1712
+cfi=(13)
+cfn=(68) std::_Iter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, true>::_S_base(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+calls=1712 0x404f1a -58 
+* * 27392 10272 8560 2 0 1 2 0 1
++5 * 1712 1712
++1 * 1712 1712
+
+fn=(240) float* std::__copy_move_a2<false, float*, float*>(float*, float*, float*)
+0x404de8 424 16 0 16
++1 * 16
++3 * 16 0 16
++2 * 16 0 16
++1 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +4 16 16 0 1 0 0 1
++4 * 16
++3 * 16 0 16
+cfn=(128) std::_Niter_base<float*>::iterator_type std::__niter_base<float*>(float*)
+calls=16 0x404878 277 
+* * 240 96 80 0 0 1 0 0 1
++5 * 16
++3 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(128)
+calls=16 0x404878 277 
+* * 240 96 80
++5 * 16
++3 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(128)
+calls=16 0x404878 277 
+* * 240 96 80
++5 * 16
++3 * 16
++3 * 16
++3 * 16 0 16
+cfn=(242) float* std::__copy_move_a<false, float*, float*>(float*, float*, float*)
+calls=16 0x404f9c -49 
+* * 1746 540 485 0 0 2 0 0 2 100 5 15
++5 +1 16
++4 * 16 16
++1 * 16 16
++2 * 16 16
++1 * 16 16
+
+fn=(214) unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+0x4045ee 216 16 0 16
++1 * 16
++3 * 16 0 16
++4 * 16 0 16
++4 +5 16 16
++4 * 16 16
++3 * 16 16
++4 * 16 16
++3 * 16
++3 * 16 0 0 0 0 0 0 0 0 16
+jcnd=16/16 +8 +2 
+* * 
++8 +2 16 16
++4 +1 16 16
++1 * 16 16
+
+fn=(238) std::_Miter_base<float*>::iterator_type std::__miter_base<float*>(float*)
+0x40455a 288 32 0 32
++1 * 32
++3 * 32
++4 * 32 0 32
++4 +1 32 32
++4 * 32
++3 * 32 0 32
+cfi=(13)
+cfn=(130) std::_Iter_base<float*, false>::_S_base(float*)
+calls=32 0x40486a -77 
+* * 192 96 64
++5 * 32 32
++1 * 32 32
+
+fn=(280) int* std::__copy_move_a2<false, int*, int*>(int*, int*, int*)
+0x404e40 424 16 0 16 1 0 0 1
++1 * 16
++3 * 16 0 16
++2 * 16 0 16
++1 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +4 16 16
++4 * 16
++3 * 16 0 16
+cfn=(62)
+calls=16 0x40492d 277 
+* * 240 96 80
++5 * 16
++3 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(62)
+calls=16 0x40492d 277 
+* * 240 96 80
++5 * 16
++3 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(62)
+calls=16 0x40492d 277 
+* * 240 96 80
++5 * 16
++3 * 16
++3 * 16
++3 * 16 0 16
+cfn=(282) int* std::__copy_move_a<false, int*, int*>(int*, int*, int*)
+calls=16 0x404fcd -49 
+* * 1746 540 485 0 0 19 0 0 19 100 4 15
++5 +1 16
++4 * 16 16
++1 * 16 16
++2 * 16 16
++1 * 16 16
+
+fn=(120) float* std::copy<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+0x4049e2 450 856 0 856
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +10 856 856
++4 * 856
++3 * 856 0 856
+cfn=(122) std::_Miter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+calls=856 0x404bc6 288 
+* * 12840 5136 4280 3 0 0 3
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(122)
+calls=856 0x404bc6 288 
+* * 12840 5136 4280
++5 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(126) float* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=856 0x404be0 -36 
+* * 415766 139976 134844 4 0 40 4 0 40 18852 1048 1708
++5 +1 856
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(128)
+0x404878 277 904 0 904
++1 * 904
++3 * 904
++4 * 904 0 904 1 0 0 1
++4 +1 904 904
++4 * 904
++3 * 904 0 904
+cfi=(13)
+cfn=(130)
+calls=904 -33 -66 
+* * 5424 2712 1808 0 0 1 0 0 1
++5 * 904 904
++1 * 904 904
+
+fn=(132) std::_Niter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >::iterator_type std::__niter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > > >(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+0x404d44 277 1712 0 1712
++1 * 1712
++3 * 1712
++4 * 1712 0 1712
++4 +1 1712 1712
++4 * 1712
++3 * 1712 0 1712
+cfi=(13)
+cfn=(134) std::_Iter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, true>::_S_base(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+calls=1712 0x404e98 -58 
+* * 27392 10272 8560 2 0 0 2
++5 * 1712 1712
++1 * 1712 1712
+
+fn=(138) float* std::__copy_move_a<false, float const*, float*>(float const*, float const*, float*)
+0x404d5e 379 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +8 856 0 856
++4 +3 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(140) float* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<float>(float const*, float const*, float*)
+calls=856 0x404eb5 -22 
+* * 323318 109160 103172 1 0 40 1 0 40 18852 1048 1708
++5 +1 856 856
++1 * 856 856
+
+fn=(242)
+0x404f9c 379 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +8 16 0 16
++4 +3 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(140)
+calls=16 0x404eb5 -22 
+* * 1506 460 389 0 0 2 0 0 2 100 5 15
++5 +1 16 16
++1 * 16 16
+
+fn=(276) int* std::copy<int*, int*>(int*, int*, int*)
+0x404cf0 450 16 0 16
++1 * 16
++3 * 16 0 16
++1 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +10 16 16
++4 * 16
++3 * 16 0 16
+cfn=(278) std::_Miter_base<int*>::iterator_type std::__miter_base<int*>(int*)
+calls=16 0x40469c 288 
+* * 240 96 80
++5 * 16
++3 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(278)
+calls=16 0x40469c 288 
+* * 240 96 80
++5 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(280)
+calls=16 0x404e40 -36 
+* * 2914 940 885 1 0 19 1 0 19 100 4 15
++5 +1 16
++4 * 16 16
++1 * 16 16
++1 * 16 16
+
+fn=(278)
+0x40469c 288 32 0 32
++1 * 32
++3 * 32
++4 * 32 0 32
++4 +1 32 32
++4 * 32
++3 * 32 0 32
+cfi=(13)
+cfn=(64)
+calls=32 0x40491f -77 
+* * 192 96 64
++5 * 32 32
++1 * 32 32
+
+fn=(122)
+0x404bc6 288 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712
++4 * 1712 0 1712
++4 +1 1712 1712
++4 * 1712
++3 * 1712 0 1712
+cfi=(13)
+cfn=(124) std::_Iter_base<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, false>::_S_base(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >)
+calls=1712 0x404d36 -77 
+* * 10272 5136 3424 2 0 0 2
++5 * 1712 1712
++1 * 1712 1712
+
+fn=(56) std::_Miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >::iterator_type std::__miter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > > >(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+0x404c38 288 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712
++4 * 1712 0 1712 1 0 0 1
++4 +1 1712 1712
++4 * 1712
++3 * 1712 0 1712
+cfi=(13)
+cfn=(58) std::_Iter_base<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, false>::_S_base(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >)
+calls=1712 0x404d8f -77 
+* * 10272 5136 3424 1 0 0 1
++5 * 1712 1712
++1 * 1712 1712
+
+fn=(74) int* std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<int>(int const*, int const*, int*)
+0x404f37 368 872 0 872
++1 * 872
++3 * 872
++4 * 872 0 872 1 0 0 1
++4 * 872 0 872
++4 * 872 0 872
++4 +2 872 872
++4 * 872 872
++4 * 872
++3 * 872
++3 * 872
++4 * 872 0 872
++4 +1 872 872
++5 * 872 0 0 0 0 0 0 0 0 872
+jcnd=8/872 +33 +2 
+* * 
++2 +1 864 864
++4 * 864
++8 * 864 864
++4 * 864 864
++4 * 864
++3 * 864 0 0 1 0 0 1
++3 * 864 0 864 0 0 1 0 0 1
+cob=(2) /lib64/libc-2.12.so
+cfi=(9) ???
+cfn=(78) memmove
+calls=864 0x3877c83840 0 
+* * 300472 100060 98337 11 2 20 11 2 20 18080 1078 859 213
+* * 864 864 0 1 1 0 1 1 0 0 0 864
++5 +1 872 872
++4 * 872
++8 * 872 872
++4 * 872
++3 +1 872 872
++1 * 872 872
+
+fn=(140)
+0x404eb5 368 872 0 872
++1 * 872
++3 * 872
++4 * 872 0 872 1 0 0 1
++4 * 872 0 872
++4 * 872 0 872 0 0 1 0 0 1
++4 +2 872 872
++4 * 872 872
++4 * 872
++3 * 872
++3 * 872
++4 * 872 0 872
++4 +1 872 872
++5 * 872 0 0 0 0 0 0 0 0 872
+jcnd=8/872 +33 +2 
+* * 
++2 +1 864 864
++4 * 864
++8 * 864 864
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cob=(2)
+cfi=(9)
+cfn=(78)
+calls=864 0x3877c83840 0 
+* * 300472 100060 98337 0 0 41 0 0 41 18080 1053 859
+* * 864 864 0 0 0 0 0 0 0 0 0 864
++5 +1 872 872
++4 * 872
++8 * 872 872
++4 * 872
++3 +1 872 872
++1 * 872 872
+
+fn=(72) int* std::__copy_move_a<false, int const*, int*>(int const*, int const*, int*)
+0x404db7 379 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856 1 0 0 1
++4 * 856 0 856
++4 * 856 0 856
++4 +8 856 0 856
++4 +3 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(74)
+calls=856 0x404f37 -22 
+* * 323318 109160 103172 14 3 2 14 3 2 18852 1074 1708 213
++5 +1 856 856
++1 * 856 856
+
+fn=(126)
+0x404be0 424 856 0 856
++1 * 856
++3 * 856 0 856
++2 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +4 856 856
++4 * 856
++3 * 856 0 856
+cfn=(128)
+calls=856 0x404878 277 
+* * 12840 5136 4280 1 0 0 1
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(132)
+calls=856 0x404d44 277 
+* * 21400 7704 6848 2 0 0 2
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(132)
+calls=856 0x404d44 277 
+* * 21400 7704 6848
++5 * 856
++3 * 856
++3 * 856
++3 * 856 0 856
+cfn=(138)
+calls=856 0x404d5e -49 
+* * 336158 113440 108308 1 0 40 1 0 40 18852 1048 1708
++5 +1 856
++4 * 856 856
++1 * 856 856
++2 * 856 856
++1 * 856 856
+
+fn=(236) float* std::copy<float*, float*>(float*, float*, float*)
+0x404caa 450 16 0 16
++1 * 16
++3 * 16 0 16
++1 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +10 16 16 0 1 0 0 1
++4 * 16
++3 * 16 0 16
+cfn=(238)
+calls=16 0x40455a 288 
+* * 240 96 80
++5 * 16
++3 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(238)
+calls=16 0x40455a 288 
+* * 240 96 80
++5 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(240)
+calls=16 0x404de8 -36 
+* * 2914 940 885 1 0 3 1 0 3 100 5 15
++5 +1 16
++4 * 16 16
++1 * 16 16
++1 * 16 16
+
+fn=(54) int* std::copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+0x404a36 450 856 0 856
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856 1 0 0 1
++4 * 856 0 856
++4 * 856 0 856
++4 +10 856 856
++4 * 856
++3 * 856 0 856
+cfn=(56)
+calls=856 0x404c38 288 
+* * 12840 5136 4280 3 0 0 3
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(56)
+calls=856 0x404c38 288 
+* * 12840 5136 4280
++5 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(60) int* std::__copy_move_a2<false, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+calls=856 0x404c52 -36 
+* * 415766 139976 134844 20 3 3 20 3 3 18852 1074 1708 213
++5 +1 856
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(60)
+0x404c52 424 856 0 856
++1 * 856
++3 * 856 0 856
++2 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +4 856 856
++4 * 856
++3 * 856 0 856
+cfn=(62)
+calls=856 0x40492d 277 
+* * 12840 5136 4280 2 0 0 2
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856 1 0 0 1
+cfn=(66)
+calls=856 0x404d9d 277 
+* * 21400 7704 6848 2 0 1 2 0 1
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(66)
+calls=856 0x404d9d 277 
+* * 21400 7704 6848
++5 * 856
++3 * 856
++3 * 856
++3 * 856 0 856
+cfn=(72)
+calls=856 0x404db7 -49 
+* * 336158 113440 108308 15 3 2 15 3 2 18852 1074 1708 213
++5 +1 856
++4 * 856 856
++1 * 856 856
++2 * 856 856
++1 * 856 856
+
+fn=(282)
+0x404fcd 379 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +8 16 0 16
++4 +3 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(74)
+calls=16 0x404f37 -22 
+* * 1506 460 389 0 0 19 0 0 19 100 4 15
++5 +1 16 16
++1 * 16 16
+
+fl=(10) /usr/include/c++/4.8/bits/stl_iterator.h
+fn=(262) __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::base() const
+0x40409e 790 32 0 32 1 0 0 1
++1 * 32
++3 * 32 0 32
++4 +1 32 32
++4 * 32 32
++1 * 32 32
+
+fn=(204) __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >::__normal_iterator(float* const&)
+0x40404e 726 16 0 16 1 0 0 1
++1 * 16
++3 * 16 0 16
++4 * 16 0 16
++4 * 16 16
++4 * 16 16
++3 * 16 16
++4 * 16 0 16
++3 * 16 16
++1 * 16 16
+
+fn=(218) __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >::difference_type __gnu_cxx::operator-<float*, std::vector<float, std::allocator<float> > >(__gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > > const&, __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > > const&)
+0x403f7b 896 8 0 8
++1 * 8
++3 * 8 0 8
++1 * 8
++4 * 8 0 8
++4 * 8 0 8
++4 +2 8 8
++4 * 8
++3 * 8 0 8
+cfn=(220) __gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >::base() const
+calls=8 0x403e26 790 
+* * 48 24 16 1 0 0 1
++5 * 8 8
++3 * 8
++3 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(220)
+calls=8 0x403e26 790 
+* * 48 24 16
++5 * 8 8
++3 * 8
++3 * 8
++3 * 8
++4 * 8
++4 * 8 8
++1 * 8 8
++1 * 8 8
+
+fn=(70) __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::base() const
+0x40500c 790 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712 0 1712
++4 +1 1712 1712
++4 * 1712 1712
++1 * 1712 1712
+
+fn=(110) __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >::__normal_iterator(float const* const&)
+0x404380 726 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712 0 1712
++4 * 1712 0 1712
++4 * 1712 1712
++4 * 1712 1712
++3 * 1712 1712
++4 * 1712 0 1712
++3 * 1712 1712
++1 * 1712 1712
+
+fn=(260) __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::difference_type __gnu_cxx::operator-<int*, std::vector<int, std::allocator<int> > >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > const&)
+0x4041f3 896 8 0 8
++1 * 8
++3 * 8 0 8
++1 * 8
++4 * 8 0 8
++4 * 8 0 8
++4 +2 8 8
++4 * 8
++3 * 8 0 8
+cfn=(262)
+calls=8 0x40409e 790 
+* * 48 24 16 1 0 0 1
++5 * 8 8
++3 * 8
++3 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(262)
+calls=8 0x40409e 790 
+* * 48 24 16
++5 * 8 8
++3 * 8
++3 * 8
++3 * 8
++4 * 8
++4 * 8 8
++1 * 8 8
++1 * 8 8
+
+fn=(136) __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >::base() const
+0x404ffe 790 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712 0 1712
++4 +1 1712 1712
++4 * 1712 1712
++1 * 1712 1712
+
+fn=(44) __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >::__normal_iterator(int const* const&)
+0x404468 726 1712 0 1712
++1 * 1712
++3 * 1712 0 1712
++4 * 1712 0 1712
++4 * 1712 1712
++4 * 1712 1712
++3 * 1712 1712
++4 * 1712 0 1712 1 0 0 1
++3 * 1712 1712
++1 * 1712 1712
+
+fn=(248) __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&)
+0x4042c6 726 16 0 16
++1 * 16
++3 * 16 0 16
++4 * 16 0 16
++4 * 16 16
++4 * 16 16
++3 * 16 16
++4 * 16 0 16
++3 * 16 16
++1 * 16 16
+
+fn=(220)
+0x403e26 790 32 0 32 1 0 0 1
++1 * 32
++3 * 32 0 32
++4 +1 32 32
++4 * 32 32
++1 * 32 32
+
+fl=(14) /usr/include/c++/4.8/bits/stl_construct.h
+fn=(184) void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+0x40454c 112 864 0 864 1 0 0 1
++1 * 864
++3 * 864 0 864
++4 * 864 0 864
++4 * 864 864
++1 * 864 864
+
+fn=(154) void std::_Destroy_aux<true>::__destroy<float*>(float*, float*)
+0x4044f8 112 864 0 864 1 0 0 1
++1 * 864
++3 * 864 0 864
++4 * 864 0 864 1 0 0 1
++4 * 864 864
++1 * 864 864
+
+fn=(182) void std::_Destroy<int*>(int*, int*)
+0x403dcc 122 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 +4 864 864
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cfn=(184)
+calls=864 0x40454c -14 
+* * 5184 1728 2592 1 0 0 1
++5 +2 864 864
++1 * 864 864
+
+fn=(150) void std::_Destroy<float*, float>(float*, float*, std::allocator<float>&)
+0x40326c 148 864 0 864
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +3 864 864 0 1 0 0 1
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cfn=(152) void std::_Destroy<float*>(float*, float*)
+calls=864 0x403d1a -29 
+* * 15552 5184 6048 3 0 0 3
++5 +1 864 864
++1 * 864 864
+
+fn=(180) void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+0x40334a 148 864 0 864
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +3 864 864
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cfn=(182)
+calls=864 0x403dcc -29 
+* * 15552 5184 6048 2 0 0 2
++5 +1 864 864
++1 * 864 864
+
+fn=(152)
+0x403d1a 122 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 +4 864 864
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cfn=(154)
+calls=864 0x4044f8 -14 
+* * 5184 1728 2592 2 0 0 2
++5 +2 864 864
++1 * 864 864
+
+fl=(15) /usr/include/c++/4.8/bits/vector.tcc
+fn=(250) std::vector<int, std::allocator<int> >::_M_insert_aux(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+0x4036de 318 8 0 8 1 0 0 1
++1 * 8
++3 * 8 0 8
++2 * 8 0 8
++1 * 8
++4 * 8 0 8
++4 * 8 0 8
++4 * 8 0 8
++4 +4 8 8
++4 * 8 8
++4 * 8 8 0 1 0 0 1
++4 * 8 8
++4 * 8
++3 * 8 0 0 0 0 0 0 0 0 8
+jcnd=8/8 0x403799 +21 
+* * 
+0x403799 +21 8 8 0 1 0 0 1
++4 * 8
++5 * 8
++5 * 8
++3 * 8 0 8
+cfi=(2) /usr/include/c++/4.8/bits/stl_vector.h
+cfn=(252) std::vector<int, std::allocator<int> >::_M_check_len(unsigned long, char const*) const
+calls=8 0x404104 1336 
+* * 1448 536 376 4 0 0 4 0 0 32
++5 * 8 0 8
++4 +1 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(258) std::vector<int, std::allocator<int> >::begin()
+calls=8 0x4041ce 538 
+* * 176 72 56
++5 * 8 0 8 1 0 0 1
++4 * 8
++4 * 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(260)
+calls=8 0x4041f3 896 
+* * 272 104 80 1 0 0 1
++5 * 8 0 8
++4 +1 8 8
++4 * 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(22) std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+calls=8 0x404236 167 
+* * 2538 463 466 3 0 7 3 0 7 361 27 16
++5 * 8 0 8
++4 +1 8 8
++4 * 8 0 8
++4 +12 8 8
++4 * 8 0 0 1 0 0 1
++8 * 8 8
++4 * 8
++4 * 8 8
++4 -5 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(3) /usr/include/c++/4.8/ext/alloc_traits.h
+cfn=(264) void __gnu_cxx::__alloc_traits<std::allocator<int> >::construct<int>(std::allocator<int>&, int*, int const&)
+calls=8 0x4036b1 215 
+* * 304 104 112 0 2 4 0 2 4 8
++5 +7 8 0 8
++8 +5 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(40) std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+calls=8 0x40333c 113 
+* * 48 24 16
++5 * 8
++3 * 8
++4 * 8
++3 * 8 0 8 1 0 0 1
+cfi=(10)
+cfn=(262)
+calls=8 0x40409e 790 
+* * 48 24 16
++5 * 8 8
++3 * 8 8
++4 * 8 8
++3 -3 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(11) /usr/include/c++/4.8/bits/stl_uninitialized.h
+cfn=(268) int* std::__uninitialized_move_if_noexcept_a<int*, int*, std::allocator<int> >(int*, int*, int*, std::allocator<int>&)
+calls=8 0x40426e -88 
+* * 2930 956 917 3 0 19 3 0 19 92 4 15
++5 * 8 0 8
++4 +5 8 0 8
++5 +5 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(40)
+calls=8 0x40333c 113 
+* * 48 24 16
++5 * 8
++3 * 8 8
++4 * 8 8
++4 * 8
++4 * 8 0 0 1 0 0 1
++3 * 8 0 8
+cfi=(10)
+cfn=(262)
+calls=8 0x40409e 790 
+* * 48 24 16
++5 * 8 8
++3 -3 8 8
++4 * 8
++3 * 8
++3 * 8
++3 * 8 0 8
+cfi=(11)
+cfn=(268)
+calls=8 0x40426e -95 
+* * 1744 608 608 0 0 0 0 0 0 8
++5 * 8 0 8
++4 +16 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(40)
+calls=8 0x40333c 113 
+* * 48 24 16
++5 * 8
++3 * 8 8
++4 * 8 8
++4 * 8 8
++4 * 8 8
++3 -1 8 0 0 1 0 0 1
++3 * 8
++3 * 8 0 8
+cfi=(14)
+cfn=(180)
+calls=8 0x40334a 148 
+* * 248 80 96
++5 +4 8 8
++4 * 8 8
++4 * 8
++3 * 8 8
++4 * 8 8
++3 * 8
++3 * 8
++3 * 8
++4 * 8
++3 * 8 8
++4 * 8 8
++3 * 8 8
++4 -2 8
++3 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(188) std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+calls=8 0x403d98 171 
+* * 1110 303 197 2 0 0 2 0 0 210 18 16
++5 +3 8 8 0 1 0 0 1
++4 * 8 8
++4 * 8 0 8
++3 +1 8 8
++4 * 8 8
++4 * 8 0 8
++4 +1 8 8
++4 * 8
++8 * 8 8
++4 * 8
++3 * 8 8
++4 * 8 0 8
++4 +2 8
+jump=8 0x4039ba * 
+* * 
+0x4039ba * 8 0 0 1 0 0 1
++4 * 8 8
++1 * 8 8
++2 * 8 8
++1 * 8 8
+
+fn=(206) std::vector<float, std::allocator<float> >::_M_insert_aux(__gnu_cxx::__normal_iterator<float*, std::vector<float, std::allocator<float> > >, float const&)
+0x4033a0 318 8 0 8 1 0 0 1
++1 * 8
++3 * 8 0 8
++2 * 8 0 8
++1 * 8
++4 * 8 0 8
++4 * 8 0 8
++4 * 8 0 8
++4 +4 8 8
++4 * 8 8
++4 * 8 8 0 1 0 0 1
++4 * 8 8
++4 * 8
++3 * 8 0 0 0 0 0 0 0 0 8
+jcnd=8/8 0x40345e +21 
+* * 
+0x40345e +21 8 8 0 1 0 0 1
++4 * 8
++5 * 8
++5 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(208) std::vector<float, std::allocator<float> >::_M_check_len(unsigned long, char const*) const
+calls=8 0x403e8c 1336 
+* * 1448 536 376 5 0 0 5 0 0 32
++5 * 8 0 8
++4 +1 8 8
++4 * 8
++3 * 8 0 8 1 0 0 1
+cfi=(2)
+cfn=(216) std::vector<float, std::allocator<float> >::begin()
+calls=8 0x403f56 538 
+* * 176 72 56
++5 * 8 0 8
++4 * 8
++4 * 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(218)
+calls=8 0x403f7b 896 
+* * 272 104 80 1 0 0 1
++5 * 8 0 8
++4 +1 8 8
++4 * 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(96) std::_Vector_base<float, std::allocator<float> >::_M_allocate(unsigned long)
+calls=8 0x403fbe 167 
+* * 3479 707 662 16 7 5 16 7 5 554 47 16
++5 * 8 0 8
++4 +1 8 8
++4 * 8 0 8
++4 +12 8 8 0 1 0 0 1
++4 * 8
++8 * 8 8
++4 * 8
++4 * 8 8
++4 -5 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(3)
+cfn=(222) void __gnu_cxx::__alloc_traits<std::allocator<float> >::construct<float>(std::allocator<float>&, float*, float const&)
+calls=8 0x403373 215 
+* * 304 104 112 0 0 1 0 0 1 8
++5 +7 8 0 8
++8 +5 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(106) std::_Vector_base<float, std::allocator<float> >::_M_get_Tp_allocator()
+calls=8 0x40325e 113 
+* * 48 24 16
++5 * 8
++3 * 8
++4 * 8 0 0 1 0 0 1
++3 * 8 0 8
+cfi=(10)
+cfn=(220)
+calls=8 0x403e26 790 
+* * 48 24 16
++5 * 8 8
++3 * 8 8
++4 * 8 8
++3 -3 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(11)
+cfn=(228) float* std::__uninitialized_move_if_noexcept_a<float*, float*, std::allocator<float> >(float*, float*, float*, std::allocator<float>&)
+calls=8 0x403ff6 -88 
+* * 2930 956 917 6 0 3 6 0 3 92 5 15
++5 * 8 0 8
++4 +5 8 0 8
++5 +5 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(106)
+calls=8 0x40325e 113 
+* * 48 24 16
++5 * 8
++3 * 8 8
++4 * 8 8 0 1 0 0 1
++4 * 8
++4 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(220)
+calls=8 0x403e26 790 
+* * 48 24 16
++5 * 8 8
++3 -3 8 8
++4 * 8
++3 * 8
++3 * 8
++3 * 8 0 8
+cfi=(11)
+cfn=(228)
+calls=8 0x403ff6 -95 
+* * 1744 608 608 0 0 0 0 0 0 8
++5 * 8 0 8
++4 +16 8 8
++4 * 8
++3 * 8 0 8
+cfi=(2)
+cfn=(106)
+calls=8 0x40325e 113 
+* * 48 24 16
++5 * 8
++3 * 8 8
++4 * 8 8
++4 * 8 8 0 1 0 0 1
++4 * 8 8
++3 -1 8
++3 * 8
++3 * 8 0 8
+cfi=(14)
+cfn=(150)
+calls=8 0x40326c 148 
+* * 248 80 96
++5 +4 8 8
++4 * 8 8
++4 * 8
++3 * 8 8
++4 * 8 8
++3 * 8
++3 * 8
++3 * 8
++4 * 8
++3 * 8 8
++4 * 8 8
++3 * 8 8
++4 -2 8
++3 * 8
++3 * 8 0 8 1 0 0 1
+cfi=(2)
+cfn=(158) std::_Vector_base<float, std::allocator<float> >::_M_deallocate(float*, unsigned long)
+calls=8 0x403ce6 171 
+* * 1074 287 191 1 0 0 1 0 0 202 7 16
++5 +3 8 8
++4 * 8 8
++4 * 8 0 8
++3 +1 8 8
++4 * 8 8
++4 * 8 0 8
++4 +1 8 8
++4 * 8
++8 * 8 8
++4 * 8
++3 * 8 8
++4 * 8 0 8
++4 +2 8
+jump=8 0x40367f * 
+* * 
+0x40367f * 8 0 0 1 0 0 1
++4 * 8 8
++1 * 8 8
++2 * 8 8
++1 * 8 8
+
+fl=(1) /home/paul878934/CMSC611/lin.cpp
+fn=(142) get_b1(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >)
+0x401585 12 428 0 428 1 0 0 1
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 +1 428 428
++4 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(2) std::vector<float, std::allocator<float> >::size() const
+calls=428 0x402d74 645 
+* * 5564 2568 856
++5 * 428
++3 * 428 0 428
++3 +1 428 428
++6 * 428 0 428
++3 * 428 428
++6 * 428 0 428
++3 +1 428 428
++6 * 428 0 428 1 0 0 1
++3 * 428 428
++6 * 428 0 428
++3 +2 428 0 428
++7 * 428
+jump=428 +86 * 
+* * 
++2 +1 92234 92234
++3 * 92234
++3 * 92234 92234
++4 * 92234
++3 * 92234
++3 * 92234 0 92234
+cfi=(2)
+cfn=(144) std::vector<float, std::allocator<float> >::operator[](unsigned long)
+calls=92234 0x402d9a 770 
+* * 1014574 461170 276702
++5 * 92234 92234
++4 * 92234 92234
++5 * 92234
++4 * 92234 0 92234
++5 +1 92234 92234
++3 * 92234
++3 * 92234 92234
++4 * 92234
++3 * 92234
++3 * 92234 0 92234
+cfi=(2)
+cfn=(146) std::vector<int, std::allocator<int> >::operator[](unsigned long)
+calls=92234 0x402dba 770 
+* * 1014574 461170 276702 1 0 0 1
++5 * 92234 92234
++2 * 92234
++4 * 92234 92234
++5 * 92234
++4 * 92234 0 92234
++5 -2 92234 0 92234
++4 * 92234 92234
++3 * 92234
++3 * 92234 92234
++3 * 92234 0 0 0 0 0 0 0 0 92234 429
+jcnd=91806/92234 -93 +1 
+* * 
+-9 * 428 428 0 1 0 0 1
++3 * 428
++3 * 428 428
++3 * 428 0 0 0 0 0 0 0 0 428
+jcnd=428/428 -93 +1 
+* * 
++2 +4 428 428
++3 * 428
++3 * 428
++4 * 428 428 0 1 0 0 1
++5 * 428
++4 * 428
++3 * 428 0 428
++5 +1 428 428
++3 * 428
++3 * 428
++4 * 428 428
++5 * 428
++4 * 428
++3 * 428 0 428
++5 +1 428 0 428
++7 * 428
+jump=428 0x4016ee * 
+* * 
++2 +1 92234 92234
++3 * 92234
++3 * 92234 92234
++4 * 92234
++3 * 92234 0 0 1 0 0 1
++3 * 92234 0 92234
+cfi=(2)
+cfn=(146)
+calls=92234 0x402dba 770 
+* * 1014574 461170 276702
++5 * 92234 92234
++2 * 92234
++4 * 92234 92234
++5 * 92234 0 92234
++5 +1 92234 92234
++3 * 92234
++3 * 92234 92234
++4 * 92234
++3 * 92234
++3 * 92234 0 92234
+cfi=(2)
+cfn=(144)
+calls=92234 0x402d9a 770 
+* * 1014574 461170 276702
++5 * 92234 92234
++4 * 92234 92234
++5 * 92234 0 92234
++5 +1 92234 92234
++5 * 92234 92234
++5 * 92234 92234
++5 * 92234
++4 * 92234 0 92234
++5 +1 92234 92234
++5 * 92234 92234
++5 * 92234 92234
++5 * 92234
++4 * 92234 0 92234
++5 -4 92234 0 92234
++4 * 92234 92234
++3 * 92234
++3 * 92234 92234
++3 * 92234 0 0 0 0 0 0 0 0 92234 429
+jcnd=91806/92234 0x401672 +1 
+* * 
+-9 * 428 428 0 1 0 0 1
++3 * 428
++3 * 428 428
++3 * 428 0 0 0 0 0 0 0 0 428
+jcnd=428/428 0x401672 +1 
+* * 
++6 +6 428 428 0 1 0 0 1
++5 * 428 428
++5 * 428 0 428
++5 +2 428 428
++3 +1 428 0 428
++3 * 428 428
++5 * 428 428
++1 * 428 428
+
+fn=(1) output(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >, std::string)'2
+0x4019b2 60 1 0 0 1 0 0 1
++3 * 1 0 1 0 0 1 0 0 1
++7 * 1 1 0 1 0 0 1
++7 +1 1
+jump=1 0x401c08 * 
+* * 
++5 +3 428
++7 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(4) std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&)
+calls=428 0x4030b2 310 
+* * 490037 145023 137140 63 34 26 63 34 26 31465 1124 1710 213
++5 * 428
++7 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(80) std::vector<float, std::allocator<float> >::vector(std::vector<float, std::allocator<float> > const&)
+calls=428 0x402ff4 310 
+* * 470880 141921 133569 46 7 84 46 7 84 27779 1379 1710
++5 * 428 0 0 1 0 0 1
++7 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfn=(142)
+calls=428 0x401585 -52 
+* * 9620156 4253464 2220892 8 0 0 8 0 0 185324 858
++5 * 428 0 428
++8 * 428 428
++6 * 428 0 428
++6 * 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(148) std::vector<float, std::allocator<float> >::~vector()
+calls=428 0x402df4 414 
+* * 111826 35230 25305 33 6 0 33 6 0 13216 222 856
++5 * 428
++7 * 428
++3 * 428 0 428 1 0 0 1
+cfi=(2)
+cfn=(178) std::vector<int, std::allocator<int> >::~vector()
+calls=428 0x402e74 414 
+* * 113961 36004 26063 7 0 0 7 0 0 13788 32 856
++5 +2 428
++7 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(4)
+calls=428 0x4030b2 310 
+* * 489107 144965 136989 4 0 1 4 0 1 31317 739 1710
++5 * 428
++7 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(80)
+calls=428 0x402ff4 310 
+* * 470121 141875 133418 0 0 0 0 0 0 27674 1042 1710
++5 * 428 428
++6 * 428 0 0 1 0 0 1
++7 * 428
++7 * 428 0 428
++6 * 428 428
++8 * 428
++3 * 428
++3 * 428 0 428
+cfn=(198) get_b0(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >, float)
+calls=428 0x401719 -33 
+* * 4452484 1854096 1020994 4 0 0 4 0 0 92662 429
++5 * 428 0 428
++8 * 428 428
++6 * 428 0 428
++6 * 428
++7 * 428 0 0 1 0 0 1
++3 * 428 0 428
+cfi=(2)
+cfn=(148)
+calls=428 0x402df4 414 
+* * 111826 35230 25305 0 0 0 0 0 0 13216 215 856
++5 * 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(178)
+calls=428 0x402e74 414 
+* * 113961 36004 26063 0 0 0 0 0 0 13788 29 856
++5 +2 428 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(2)
+calls=428 0x402d74 645 
+* * 5564 2568 856
++5 * 428 428
++6 * 428
++3 * 428
++3 * 428
++3 * 428 428
++7 * 428
++3 * 428 0 0 1 0 0 1
++3 * 428 0 428
+cfi=(2)
+cfn=(144)
+calls=428 0x402d9a 770 
+* * 4708 2140 1284
++5 * 428
++3 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(200) std::vector<float, std::allocator<float> >::push_back(float const&)
+calls=428 0x402eda 901 
+* * 40147 15006 11510 42 34 12 42 34 12 1752 71 47
++5 +1 428 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(10) std::vector<int, std::allocator<int> >::size() const
+calls=428 0x402f54 645 
+* * 5564 2568 856 0 1 0 0 1
++5 * 428 428
++6 * 428
++3 * 428
++3 * 428
++3 * 428 428
++7 * 428 0 0 1 0 0 1
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(146)
+calls=428 0x402dba 770 
+* * 4708 2140 1284
++5 * 428
++3 * 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(244) std::vector<int, std::allocator<int> >::push_back(int const&)
+calls=428 0x402f7a 901 
+* * 39242 14778 11320 24 28 45 24 28 45 1567 49 47
++5 +1 428 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(10)
+calls=428 0x402f54 645 
+* * 5564 2568 856
++5 * 428 428
++6 * 428
++3 * 428
++3 * 428
++3 * 428 428 0 1 0 0 1
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(146)
+calls=428 0x402dba 770 
+* * 4708 2140 1284
++5 * 428 428
++2 * 428
++4 * 428 428
++8 * 428 428
++8 * 428 0 428
++8 +1 428 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(2)
+calls=428 0x402d74 645 
+* * 5564 2568 856
++5 * 428 428 0 1 0 0 1
++6 * 428
++3 * 428
++3 * 428
++3 * 428 428
++7 * 428
++3 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(144)
+calls=428 0x402d9a 770 
+* * 4708 2140 1284
++5 * 428 428
++4 * 428 428
++8 * 428
++4 * 428 428
++8 * 428
++3 * 428 0 428
++8 +2 428 0 428
++7 -12 428 428
++8 * 428 428
++7 * 428 0 0 0 0 0 0 0 0 428 3
+jcnd=1/428 +47 * 
+* * 
+-15 * 1 1 0 1 1 0 1 1
++8 * 1 1 0 0 1 0 0 1
++7 * 1 0 0 0 0 0 0 0 0 1
++2 * 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(2)
+calls=428 0x402d74 645 
+* * 5564 2568 856 2 0 1 2 0 1
++5 * 428
++3 * 428 428
++7 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(2)
+calls=428 0x402d74 645 
+* * 5564 2568 856 0 1 0 0 1
++5 * 428
++3 * 428 0 0 0 0 0 0 0 0 428 2
++2 * 428 0 0 1 0 0 1
++5 * 428
+jump=428 +7 * 
+* * 
++2 * 1
++5 * 1
++2 * 1 0 0 0 0 0 0 0 0 1
+-2 * 428
++2 * 428 0 0 0 0 0 0 0 0 428
+jcnd=428/428 0x4019c8 +3 
+* * 
+
+fn=(198)
+0x401719 33 428 0 428
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 * 428 0 428
++5 +1 428 428
++4 * 428
++3 * 428 0 428
+cfi=(2)
+cfn=(2)
+calls=428 0x402d74 645 
+* * 5564 2568 856
++5 * 428
++3 * 428 0 428
++3 +1 428 428 0 1 0 0 1
++6 * 428 0 428
++3 * 428 428
++6 * 428 0 428
++3 +2 428 0 428
++7 * 428
+jump=428 +86 * 
+* * 
++2 +1 92234 92234
++3 * 92234
++3 * 92234 92234
++4 * 92234
++3 * 92234
++3 * 92234 0 92234
+cfi=(2)
+cfn=(144)
+calls=92234 0x402d9a 770 
+* * 1014574 461170 276702
++5 * 92234 92234
++4 * 92234 92234
++5 * 92234
++4 * 92234 0 92234
++5 +1 92234 92234
++3 * 92234
++3 * 92234 92234
++4 * 92234
++3 * 92234
++3 * 92234 0 92234
+cfi=(2)
+cfn=(146)
+calls=92234 0x402dba 770 
+* * 1014574 461170 276702
++5 * 92234 92234
++2 * 92234
++4 * 92234 92234
++5 * 92234
++4 * 92234 0 92234
++5 -2 92234 0 92234
++4 * 92234 92234
++3 * 92234
++3 * 92234 92234
++3 * 92234 0 0 0 0 0 0 0 0 92234 429
+jcnd=91806/92234 -93 +1 
+* * 
+-9 * 428 428 0 1 0 0 1
++3 * 428
++3 * 428 428
++3 * 428 0 0 0 0 0 0 0 0 428
+jcnd=428/428 -93 +1 
+* * 
++2 +4 428 428
++3 * 428
++3 * 428 0 0 1 0 0 1
++4 * 428 428
++5 * 428
++4 * 428
++3 * 428 0 428
++5 +1 428 428
++3 * 428
++3 * 428
++4 * 428 428
++5 * 428
++4 * 428
++3 * 428 0 428
++5 +1 428 428
++5 * 428 428
++5 * 428 428
++5 * 428 0 0 1 0 0 1
++4 * 428
++3 * 428 0 428
++5 +2 428 428
++3 +1 428 0 428
++3 * 428 428
++5 * 428 428
++1 * 428 428
+
+fl=(4) /usr/include/c++/4.8/bits/allocator.h
+fn=(16) std::allocator<int>::allocator(std::allocator<int> const&)
+0x404804 115 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(5) /usr/include/c++/4.8/ext/new_allocator.h
+cfn=(18) __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&)
+calls=856 0x404a28 -35 
+* * 5136 1712 2568 1 0 1 1 0 1
++5 * 856 856
++1 * 856 856
+
+fn=(174) std::allocator<float>::~allocator()
+0x403ccc 121 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 856
++4 * 856
++3 * 856 0 856
+cfi=(5)
+cfn=(176) __gnu_cxx::new_allocator<float>::~new_allocator()
+calls=856 0x4044cc -35 
+* * 4280 1712 1712
++5 * 856 856
++1 * 856 856
+
+fn=(90) std::allocator<float>::allocator(std::allocator<float> const&)
+0x4047b2 115 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856 1 0 0 1
++4 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(5)
+cfn=(92) __gnu_cxx::new_allocator<float>::new_allocator(__gnu_cxx::new_allocator<float> const&)
+calls=856 0x4049d4 -35 
+* * 5136 1712 2568 1 0 0 1
++5 * 856 856
++1 * 856 856
+
+fn=(194) std::allocator<int>::~allocator()
+0x403d7e 121 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 856
++4 * 856
++3 * 856 0 856
+cfi=(5)
+cfn=(196) __gnu_cxx::new_allocator<int>::~new_allocator()
+calls=856 0x404520 -35 
+* * 4280 1712 1712
++5 * 856 856
++1 * 856 856
+
+fl=(3)
+fn=(8) __gnu_cxx::__alloc_traits<std::allocator<int> >::_S_select_on_copy(std::allocator<int> const&)
+0x403afa 224 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856
++4 * 856 856
++4 * 856 856
++1 * 856 856
+
+fn=(264)
+0x4036b1 215 428 0 428
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 * 428 0 428
++4 +1 428 428
++4 * 428 428
++4 * 428 428
++4 * 428
++3 * 428
++3 * 428 0 428
+cfi=(5)
+cfn=(266) __gnu_cxx::new_allocator<int>::construct(int*, int const&)
+calls=428 0x40406a -87 
+* * 10272 3424 3852 0 28 19 0 28 19 428
++5 * 428 428
++1 * 428 428
+
+fn=(212) __gnu_cxx::__alloc_traits<std::allocator<float> >::max_size(std::allocator<float> const&)
+0x4048c3 221 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 +1 16 16
++4 * 16
++3 * 16 0 16
+cfi=(5)
+cfn=(102) __gnu_cxx::new_allocator<float>::max_size() const
+calls=16 +8 113 
+* * 96 32 32
++5 * 16 16
++1 * 16 16
+
+fn=(256) __gnu_cxx::__alloc_traits<std::allocator<int> >::max_size(std::allocator<int> const&)
+0x404978 221 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 +1 16 16
++4 * 16
++3 * 16 0 16
+cfi=(5)
+cfn=(28) __gnu_cxx::new_allocator<int>::max_size() const
+calls=16 +7 113 
+* * 96 32 32
++5 * 16 16
++1 * 16 16
+
+fn=(84) __gnu_cxx::__alloc_traits<std::allocator<float> >::_S_select_on_copy(std::allocator<float> const&)
+0x4039ed 224 856 0 856
++1 * 856
++3 * 856 0 856
++4 * 856 856
++4 * 856 856
++1 * 856 856
+
+fn=(222)
+0x403373 215 428 0 428
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 * 428 0 428
++4 +1 428 428
++4 * 428 428
++4 * 428 428
++4 * 428
++3 * 428
++3 * 428 0 428
+cfi=(5)
+cfn=(224) __gnu_cxx::new_allocator<float>::construct(float*, float const&)
+calls=428 0x403df2 -87 
+* * 10272 3424 3852 0 27 4 0 27 4 428 3
++5 * 428 428
++1 * 428 428
+
+fl=(13)
+fn=(130)
+0x40486a 212 936 0 936
++1 * 936
++3 * 936 0 936 0 0 1 0 0 1
++4 +1 936 936
++4 * 936 936
++1 * 936 936
+
+fn=(134)
+0x404e98 220 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712
++4 * 1712 0 1712
++4 +1 1712
++4 * 1712
++3 * 1712 0 1712
+cfi=(10)
+cfn=(136)
+calls=1712 0x404ffe 790 
+* * 10272 5136 3424 1 0 0 1
++5 * 1712 1712
++3 * 1712 1712
++1 * 1712 1712
+
+fn=(58)
+0x404d8f 212 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712 0 1712
++4 +1 1712 1712
++4 * 1712 1712
++1 * 1712 1712
+
+fn=(68)
+0x404f1a 220 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712
++4 * 1712 0 1712
++4 +1 1712
++4 * 1712
++3 * 1712 0 1712 0 0 1 0 0 1
+cfi=(10)
+cfn=(70)
+calls=1712 0x40500c 790 
+* * 10272 5136 3424 1 0 0 1
++5 * 1712 1712
++3 * 1712 1712
++1 * 1712 1712
+
+fn=(64)
+0x40491f 212 936 0 936
++1 * 936
++3 * 936 0 936
++4 +1 936 936
++4 * 936 936
++1 * 936 936
+
+fn=(124)
+0x404d36 212 1712 0 1712 1 0 0 1
++1 * 1712
++3 * 1712 0 1712
++4 +1 1712 1712 0 1 0 0 1
++4 * 1712 1712
++1 * 1712 1712
+
+fl=(16) /usr/include/c++/4.8/new
+fn=(226) operator new(unsigned long, void*)
+0x402d61 110 856 0 856
++1 * 856
++3 * 856 0 856
++4 * 856 0 856
++4 * 856 856
++4 * 856 856
++1 * 856 856
+
+fl=(5)
+fn=(100) __gnu_cxx::new_allocator<float>::allocate(unsigned long, void const*)
+0x40461a 99 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +2 864 864
++4 * 864
++3 * 864 0 864
+cfn=(102)
+calls=864 0x4048de +12 
+* * 5184 1728 1728 1 0 0 1
++5 * 864 864
++4 * 864 0 0 1 0 0 1
++3 * 864
++2 * 864 0 0 0 0 0 0 0 0 864
+jcnd=864/864 +7 +3 
+* * 
++7 +3 864 864
++4 * 864
++4 * 864
++3 * 864 0 864
+cob=(5) /usr/lib64/libstdc++.so.6.0.13
+cfi=(8) ???
+cfn=(32) operator new(unsigned long)
+calls=864 0x387e4bd0b0 0 
+* * 227922 35711 35981 35 14 49 35 14 49 35427 1420 864
+* * 864 864 0 0 0 0 0 0 0 0 0 864
++5 +1 864 864
++1 * 864 864
+
+fn=(18)
+0x404a28 81 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856 0 0 1 0 0 1
++4 * 856 0 856
++4 * 856 856
++1 * 856 856
+
+fn=(92)
+0x4049d4 81 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856
++4 * 856 0 856
++4 * 856 856
++1 * 856 856
+
+fn=(196)
+0x404520 86 856 0 856
++1 * 856
++3 * 856 0 856
++4 * 856 856
++1 * 856 856
+
+fn=(26) __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+0x404730 99 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864 1 0 0 1
++4 +2 864 864
++4 * 864
++3 * 864 0 864
+cfn=(28)
+calls=864 0x404992 +12 
+* * 5184 1728 1728 1 0 0 1
++5 * 864 864
++4 * 864
++3 * 864
++2 * 864 0 0 0 0 0 0 0 0 864
+jcnd=864/864 +7 +3 
+* * 
++7 +3 864 864
++4 * 864
++4 * 864
++3 * 864 0 864
+cob=(5)
+cfi=(8)
+cfn=(32)
+calls=864 0x387e4bd0b0 0 
+* * 265124 41659 42927 20 29 26 20 29 26 42563 816 864
+* * 864 864 0 1 1 0 1 1 0 0 0 864
++5 +1 864 864
++1 * 864 864
+
+fn=(102)
+0x4048de 113 880 0 880 1 0 0 1
++1 * 880
++3 * 880 0 880
++4 +1 880
++10 * 880 880
++1 * 880 880
+
+fn=(266)
+0x40406a 129 428 0 428
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 * 428 0 428
++4 +1 428 428
++4 * 428
++3 * 428
++5 * 428 0 428
+cfi=(16)
+cfn=(226)
+calls=428 0x402d61 -20 
+* * 2996 1284 1284
++5 * 428
++3 * 428 0 0 0 0 0 0 0 0 428
++2 * 428 428
++4 * 428 428 0 0 28 0 0 28
++2 * 428 0 428 0 0 19 0 0 19
++2 * 428 428
++1 * 428 428
+
+fn=(28)
+0x404992 113 880 0 880 1 0 0 1
++1 * 880
++3 * 880 0 880
++4 +1 880
++10 * 880 880
++1 * 880 880
+
+fn=(176)
+0x4044cc 86 856 0 856
++1 * 856
++3 * 856 0 856
++4 * 856 856
++1 * 856 856
+
+fn=(224)
+0x403df2 129 428 0 428
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 * 428 0 428
++4 +1 428 428
++4 * 428
++3 * 428
++5 * 428 0 428
+cfi=(16)
+cfn=(226)
+calls=428 0x402d61 -20 
+* * 2996 1284 1284
++5 * 428
++3 * 428 0 0 0 0 0 0 0 0 428 3
++2 * 428 428
++4 * 428 428 0 0 27 0 0 27
++2 * 428 0 428 0 0 4 0 0 4
++2 * 428 428
++1 * 428 428
+
+fn=(160) __gnu_cxx::new_allocator<float>::deallocate(float*, unsigned long)
+0x4044d6 109 864 0 864
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +1 864 864
++4 * 864
++3 * 864 0 864
+cob=(5)
+cfi=(8)
+cfn=(164) operator delete(void*)
+calls=864 0x387e4bb2f0 0 
+* * 104662 27011 13913 23 5 0 23 5 0 25770 444 864
+* * 864 864 0 1 1 0 1 1 0 0 0 864
++5 * 864 864
++1 * 864 864
+
+fn=(190) __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+0x40452a 109 864 0 864
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +1 864 864
++4 * 864
++3 * 864 0 864
+cob=(5)
+cfi=(8)
+cfn=(164)
+calls=864 0x387e4bb2f0 0 
+* * 108968 28575 15435 2 0 0 2 0 0 26922 71 864
+* * 864 864 0 0 0 0 0 0 0 0 0 864
++5 * 864 864
++1 * 864 864
+
+fl=(11)
+fn=(48) int* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, int>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*, std::allocator<int>&)
+0x403bd5 256 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856 1 0 0 1
+cfn=(50) int* std::uninitialized_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+calls=856 0x404484 107 
+* * 484246 163944 158812 25 3 3 25 3 3 18852 1074 1708 213
++5 * 856 856
++1 * 856 856
+
+fn=(230) float* std::__uninitialized_copy_a<float*, float*, float>(float*, float*, float*, std::allocator<float>&)
+0x40465c 256 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +2 16 16
++4 * 16 16
++4 * 16 16
++4 * 16 0 0 1 0 0 1
++3 * 16
++3 * 16 0 16
+cfn=(232) float* std::uninitialized_copy<float*, float*>(float*, float*, float*)
+calls=16 0x4048f2 107 
+* * 4194 1388 1333 4 0 3 4 0 3 100 5 15
++5 * 16 16
++1 * 16 16
+
+fn=(52) int* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*>(__gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int const*, std::vector<int, std::allocator<int> > >, int*)
+0x404829 91 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856 0 1 0 0 1
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(12)
+cfn=(54)
+calls=856 0x404a36 450 
+* * 460278 155384 150252 24 3 3 24 3 3 18852 1074 1708 213
++5 * 856 856
++1 * 856 856
+
+fn=(114) float* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*, float>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*, std::allocator<float>&)
+0x403ac9 256 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(116) float* std::uninitialized_copy<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=856 0x40439c 107 
+* * 484246 163944 158812 7 0 40 7 0 40 18852 1048 1708
++5 * 856 856
++1 * 856 856
+
+fn=(116)
+0x40439c 107 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +10 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(118) float* std::__uninitialized_copy<true>::__uninit_copy<__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*>(__gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, __gnu_cxx::__normal_iterator<float const*, std::vector<float, std::allocator<float> > >, float*)
+calls=856 0x4047d7 -26 
+* * 472262 159664 154532 7 0 40 7 0 40 18852 1048 1708
++5 +1 856 856
++1 * 856 856
+
+fn=(118)
+0x4047d7 91 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(12)
+cfn=(120)
+calls=856 0x4049e2 450 
+* * 460278 155384 150252 7 0 40 7 0 40 18852 1048 1708
++5 * 856 856
++1 * 856 856
+
+fn=(268)
+0x40426e 274 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16 1 0 0 1
++4 * 16 0 16
++4 +7 16 16
++4 * 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(270) int* std::__uninitialized_copy_a<int*, int*, int>(int*, int*, int*, std::allocator<int>&)
+calls=16 0x404772 -25 
+* * 4434 1468 1429 2 0 19 2 0 19 100 4 15
++5 +1 16 16
++1 * 16 16
+
+fn=(228)
+0x403ff6 274 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16 1 0 0 1
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +7 16 16
++4 * 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16 0 16
+cfn=(230)
+calls=16 0x40465c -25 
+* * 4434 1468 1429 5 0 3 5 0 3 100 5 15
++5 +1 16 16
++1 * 16 16
+
+fn=(232)
+0x4048f2 107 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +10 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(234) float* std::__uninitialized_copy<true>::__uninit_copy<float*, float*>(float*, float*, float*)
+calls=16 0x404af4 -26 
+* * 3970 1308 1253 4 0 3 4 0 3 100 5 15
++5 +1 16 16
++1 * 16 16
+
+fn=(272) int* std::uninitialized_copy<int*, int*>(int*, int*, int*)
+0x4049a6 107 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +10 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(274) int* std::__uninitialized_copy<true>::__uninit_copy<int*, int*>(int*, int*, int*)
+calls=16 0x404b99 -26 
+* * 3970 1308 1253 2 0 19 2 0 19 100 4 15
++5 +1 16 16
++1 * 16 16
+
+fn=(274)
+0x404b99 91 16 0 16 1 0 0 1
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +2 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfi=(12)
+cfn=(276)
+calls=16 0x404cf0 450 
+* * 3746 1228 1173 1 0 19 1 0 19 100 4 15
++5 * 16 16
++1 * 16 16
+
+fn=(50)
+0x404484 107 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +10 856 856
++4 * 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(52)
+calls=856 0x404829 -26 
+* * 472262 159664 154532 25 3 3 25 3 3 18852 1074 1708 213
++5 +1 856 856
++1 * 856 856
+
+fn=(270)
+0x404772 256 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 * 16 0 16
++4 +2 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfn=(272)
+calls=16 0x4049a6 107 
+* * 4194 1388 1333 2 0 19 2 0 19 100 4 15
++5 * 16 16
++1 * 16 16
+
+fn=(234)
+0x404af4 91 16 0 16 1 0 0 1
++1 * 16
++3 * 16
++4 * 16 0 16
++4 * 16 0 16 1 0 0 1
++4 * 16 0 16
++4 +2 16 16
++4 * 16 16
++4 * 16 16
++4 * 16
++3 * 16
++3 * 16 0 16
+cfi=(12)
+cfn=(236)
+calls=16 0x404caa 450 
+* * 3746 1228 1173 2 0 3 2 0 3 100 5 15
++5 * 16 16
++1 * 16 16
+
+fl=(2)
+fn=(40)
+0x40333c 113 1736 0 1736 1 0 0 1
++1 * 1736
++3 * 1736 0 1736 1 0 0 1
++4 +1 1736 1736
++4 * 1736 1736
++1 * 1736 1736
+
+fn=(112) std::vector<float, std::allocator<float> >::begin() const
+0x403a68 547 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++3 * 856 0 856
++4 * 856
++4 * 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(10)
+cfn=(110)
+calls=856 0x404380 726 
+* * 8560 4280 3424
++5 * 856 856
++4 * 856 856
++1 * 856 856
+
+fn=(148)
+0x402df4 414 856 0 856
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856 1 0 0 1
++4 +2 856 856
++4 * 856
++3 * 856 0 856
+cfn=(106)
+calls=856 0x40325e 113 
+* * 5136 2568 1712
++5 * 856
++3 * 856 856
++4 * 856 856
++4 * 856 856
++4 * 856 856
++3 -1 856
++3 * 856
++3 * 856 0 856
+cfi=(14)
+cfn=(150)
+calls=856 0x40326c 148 
+* * 26536 8560 10272 4 0 0 4
++5 +1 856 856
++4 * 856
++3 * 856 0 856
+cfn=(156) std::_Vector_base<float, std::allocator<float> >::~_Vector_base()
+calls=856 0x4031ec 159 
+* * 171436 51628 33490 27 6 0 27 6 0 26432 437 1712
++5 * 856
+jump=856 +28 * 
+* * 
++28 * 856 0 0 1 0 0 1
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(158)
+0x403ce6 171 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +2 864 864
++5 * 864 0 0 0 0 0 0 0 0 864
++2 +1 864 864
++4 * 864 864
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cfi=(5)
+cfn=(160)
+calls=864 0x4044d6 -65 
+* * 115030 30467 18233 24 6 0 24 6 0 25770 444 1728
++5 +1 864 864
++1 * 864 864
+
+fn=(12) std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&)
+0x403b16 134 856 0 856
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(14) std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+calls=856 0x4043ca -45 
+* * 30816 11128 11984 4 0 4 4 0 4
++5 +1 856 856 0 1 0 0 1
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(20) std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long)
+calls=856 0x404412 +43 
+* * 320274 62700 58821 24 30 19 24 30 19 43930 789 1712
++5 * 856
+jump=856 +28 * 
+* * 
++28 * 856
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(14)
+0x4043ca 90 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856 0 0 1 0 0 1
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(4)
+cfn=(16)
+calls=856 0x404804 +24 
+* * 15408 5136 5992 2 0 1 2 0 1
++5 * 856 856
++4 * 856 0 856 0 0 2 0 0 2
++7 * 856 856
++4 * 856 0 856 1 0 0 1
++8 * 856 856
++4 * 856 0 856
++8 +1 856 856
++1 * 856 856
+
+fn=(80)
+0x402ff4 310 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856
++2 * 856 0 856
++2 * 856 0 856
++1 * 856 0 0 1 0 0 1
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856
++3 * 856 0 856
+cfn=(82) std::_Vector_base<float, std::allocator<float> >::_M_get_Tp_allocator() const
+calls=856 0x4039fc 117 
+* * 5136 2568 1712 2 0 0 2
++5 * 856
++3 * 856 0 856
+cfi=(3)
+cfn=(84)
+calls=856 0x4039ed -88 
+* * 5136 2568 1712
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(2)
+calls=856 0x402d74 645 
+* * 11128 5136 1712
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856
++3 * 856
++3 * 856 0 856 1 0 0 1
+cfn=(86) std::_Vector_base<float, std::allocator<float> >::_Vector_base(unsigned long, std::allocator<float> const&)
+calls=856 0x403a0a 134 
+* * 331779 73628 69655 31 7 44 31 7 44 36601 1373 1712
++5 +4 856 856
++4 * 856
++3 * 856 0 856
+cfn=(106)
+calls=856 0x40325e 113 
+* * 5136 2568 1712 1 0 0 1
++5 * 856
++3 * 856 856
++4 * 856 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(108) std::vector<float, std::allocator<float> >::end() const
+calls=856 0x403a98 565 
+* * 21400 8560 6848 2 0 0 2
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(112)
+calls=856 0x403a68 547 
+* * 21400 8560 6848
++5 * 856
++3 * 856
++3 * 856
++3 * 856
++3 * 856 0 856
+cfi=(11)
+cfn=(114)
+calls=856 0x403ac9 -60 
+* * 497086 168224 163948 7 0 40 7 0 40 18852 1048 1708
++5 -3 856 856
++4 * 856 0 856
++4 * 856
+jump=856 +28 +4 
+* * 
++28 +4 856
++4 * 856 856
++1 * 856 856
++2 * 856 856
++2 * 856 856
++1 * 856 856
+
+fn=(188)
+0x403d98 171 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 * 864 0 864
++4 +2 864 864
++5 * 864 0 0 0 0 0 0 0 0 864 8
++2 +1 864 864
++4 * 864 864
++4 * 864 864
++4 * 864
++3 * 864
++3 * 864 0 864
+cfi=(5)
+cfn=(190)
+calls=864 0x40452a -65 
+* * 119336 32031 19755 2 0 0 2 0 0 26922 71 1728
++5 +1 864 864
++1 * 864 864
+
+fn=(22)
+0x404236 167 864 0 864 1 0 0 1
++1 * 864
++3 * 864
++4 * 864 0 864 1 0 0 1
++4 * 864 0 864
++4 0 864 864
++5 0 864 0 0 0 0 0 0 0 0 864
++2 0 864 864
++4 0 864 864
++4 0 864
++5 0 864
++3 0 864
++3 0 864 0 864
+fi=(6) ???
+cfi=(5)
+cfn=(26)
+calls=864 0x404730 99 
+* 0 287588 48571 49839 24 30 26 24 30 26 43427 816 1728
++5 0 864
+fi=(6)
+jump=864 +7 0 
+* 0 
++7 0 864 864
++1 0 864 864
+
+fn=(42) std::vector<int, std::allocator<int> >::end() const
+0x403ba4 565 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856 0 856
++4 * 856
++4 * 856 0 0 1 0 0 1
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(10)
+cfn=(44)
+calls=856 0x404468 726 
+* * 8560 4280 3424 1 0 0 1
++5 * 856 856
++4 * 856 856
++1 * 856 856
+
+fn=(46) std::vector<int, std::allocator<int> >::begin() const
+0x403b74 547 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++3 * 856 0 856
++4 * 856
++4 * 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(10)
+cfn=(44)
+calls=856 0x404468 726 
+* * 8560 4280 3424
++5 * 856 856
++4 * 856 856
++1 * 856 856
+
+fn=(86)
+0x403a0a 134 856 0 856
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(88) std::_Vector_base<float, std::allocator<float> >::_Vector_impl::_Vector_impl(std::allocator<float> const&)
+calls=856 0x4042e2 -45 
+* * 30816 11128 11984 5 0 0 5
++5 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856 1 0 0 1
+cfn=(94) std::_Vector_base<float, std::allocator<float> >::_M_create_storage(unsigned long)
+calls=856 0x40432a +43 
+* * 282131 56508 51679 25 7 44 25 7 44 36601 1373 1712
++5 * 856
+jump=856 +28 * 
+* * 
++28 * 856
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(88)
+0x4042e2 90 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856 1 0 0 1
+cfi=(4)
+cfn=(90)
+calls=856 0x4047b2 +24 
+* * 15408 5136 5992 3 0 0 3
++5 * 856 856
++4 * 856 0 856
++7 * 856 856
++4 * 856 0 856
++8 * 856 856
++4 * 856 0 856
++8 +1 856 856
++1 * 856 856
+
+fn=(156)
+0x4031ec 159 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856 0 1 0 0 1
++4 * 856
++3 * 856 856
++4 * 856 856
++3 * 856
++3 * 856
++3 * 856
++4 * 856
++3 * 856 856
++4 * 856 856
++3 -1 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(158)
+calls=856 0x403ce6 +11 
+* * 127780 35364 22362 24 6 0 24 6 0 26432 437 1712
++5 +1 856 856
++4 * 856
++3 * 856 0 856
+cfn=(172) std::_Vector_base<float, std::allocator<float> >::_Vector_impl::~_Vector_impl()
+calls=856 0x4031b8 -82 
+* * 19688 6848 6848 1 0 0 1
++5 * 856
+jump=856 +28 * 
+* * 
++28 * 856
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(172)
+0x4031b8 79 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 856
++4 * 856
++3 * 856 0 856
+cfi=(4)
+cfn=(174)
+calls=856 0x403ccc +42 
+* * 11984 4280 4280
++5 * 856 856
++1 * 856 856
+
+fn=(202) std::vector<float, std::allocator<float> >::end()
+0x403688 556 8 0 8 1 0 0 1
++1 * 8
++3 * 8
++4 * 8 0 8
++4 +1 8 8
++4 * 8
++4 * 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(204)
+calls=8 0x40404e 726 
+* * 80 40 32 1 0 0 1
++5 * 8 8
++4 * 8 8
++1 * 8 8
+
+fn=(208)
+0x403e8c 1336 8 0 8 1 0 0 1
++1 * 8
++3 * 8 0 8
++1 * 8
++4 * 8 0 8
++4 * 8 0 8
++4 * 8 0 8
++4 +2 8 8
++4 * 8
++3 * 8 0 8
+cfn=(210) std::vector<float, std::allocator<float> >::max_size() const
+calls=8 0x4045cc 650 
+* * 256 88 88 1 0 0 1
++5 * 8
++3 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(2)
+calls=8 0x402d74 645 
+* * 104 48 16
++5 * 8
++3 * 8 0 0 1 0 0 1
++3 * 8 8
++4 * 8
++3 * 8
++3 * 8
++2 * 8 0 0 0 0 0 0 0 0 8
+jcnd=8/8 +14 +3 
+* * 
++14 +3 8 8
++4 * 8
++3 * 8 0 8
+cfn=(2)
+calls=8 0x402d74 645 
+* * 104 48 16
++5 * 8
++3 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(2)
+calls=8 0x402d74 645 
+* * 104 48 16
++5 * 8 0 8
++4 * 8
++4 * 8 0 0 1 0 0 1
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(12)
+cfn=(214)
+calls=8 0x4045ee 216 
+* * 104 56 24 0 0 0 0 0 0 8
++5 * 8 8
++3 * 8
++3 * 8 0 8
++4 +1 8 8
++4 * 8
++3 * 8 0 8
+cfn=(2)
+calls=8 0x402d74 645 
+* * 104 48 16
++5 * 8 8
++4 * 8 0 0 0 0 0 0 0 0 8
++2 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(210)
+calls=8 0x4045cc 650 
+* * 256 88 88
++5 * 8 8
++4 * 8 0 0 0 0 0 0 0 0 8
+jcnd=8/8 +16 * 
+* * 
++16 * 8 8 0 1 0 0 1
++4 +1 8
++4 * 8 8
++1 * 8 8
++1 * 8 8
+
+fn=(246) std::vector<int, std::allocator<int> >::end()
+0x4039c4 556 8 0 8
++1 * 8
++3 * 8
++4 * 8 0 8
++4 +1 8 8
++4 * 8
++4 * 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(248)
+calls=8 0x4042c6 726 
+* * 80 40 32
++5 * 8 8
++4 * 8 8
++1 * 8 8
+
+fn=(10)
+0x402f54 645 1744 0 1744 1 0 0 1
++1 * 1744
++3 * 1744 0 1744
++4 +1 1744 1744
++4 * 1744 1744 0 0 2 0 0 2
++4 * 1744
++3 * 1744 1744
++4 * 1744 1744
++3 * 1744
++3 * 1744
++3 * 1744
++4 * 1744 1744
++1 * 1744 1744
+
+fn=(106)
+0x40325e 113 1736 0 1736 1 0 0 1
++1 * 1736
++3 * 1736 0 1736
++4 +1 1736 1736
++4 * 1736 1736
++1 * 1736 1736
+
+fn=(216)
+0x403f56 538 8 0 8
++1 * 8
++3 * 8
++4 * 8 0 8
++4 +1 8 8
++4 * 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(204)
+calls=8 0x40404e 726 
+* * 80 40 32
++5 * 8 8
++4 * 8 8
++1 * 8 8
+
+fn=(252)
+0x404104 1336 8 0 8 1 0 0 1
++1 * 8
++3 * 8 0 8
++1 * 8
++4 * 8 0 8
++4 * 8 0 8
++4 * 8 0 8
++4 +2 8 8
++4 * 8
++3 * 8 0 8
+cfn=(254) std::vector<int, std::allocator<int> >::max_size() const
+calls=8 0x40470e 650 
+* * 256 88 88
++5 * 8
++3 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(10)
+calls=8 0x402f54 645 
+* * 104 48 16
++5 * 8
++3 * 8
++3 * 8 8
++4 * 8 0 0 1 0 0 1
++3 * 8
++3 * 8
++2 * 8 0 0 0 0 0 0 0 0 8
+jcnd=8/8 +14 +3 
+* * 
++14 +3 8 8
++4 * 8
++3 * 8 0 8
+cfn=(10)
+calls=8 0x402f54 645 
+* * 104 48 16
++5 * 8
++3 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(10)
+calls=8 0x402f54 645 
+* * 104 48 16
++5 * 8 0 8
++4 * 8
++4 * 8
++4 * 8
++3 * 8 0 0 1 0 0 1
++3 * 8 0 8
+cfi=(12)
+cfn=(214)
+calls=8 0x4045ee 216 
+* * 104 56 24 0 0 0 0 0 0 8
++5 * 8 8
++3 * 8
++3 * 8 0 8
++4 +1 8 8
++4 * 8
++3 * 8 0 8
+cfn=(10)
+calls=8 0x402f54 645 
+* * 104 48 16
++5 * 8 8
++4 * 8 0 0 0 0 0 0 0 0 8
++2 * 8 8
++4 * 8
++3 * 8 0 8
+cfn=(254)
+calls=8 0x40470e 650 
+* * 256 88 88
++5 * 8 8
++4 * 8 0 0 0 0 0 0 0 0 8
+jcnd=8/8 +16 * 
+* * 
++16 * 8 8 0 1 0 0 1
++4 +1 8
++4 * 8 8
++1 * 8 8
++1 * 8 8
+
+fn=(6) std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() const
+0x403b08 117 872 0 872 1 0 0 1
++1 * 872
++3 * 872 0 872 0 0 1 0 0 1
++4 +1 872 872
++4 * 872 872
++1 * 872 872
+
+fn=(82)
+0x4039fc 117 872 0 872 1 0 0 1
++1 * 872
++3 * 872 0 872 1 0 0 1
++4 +1 872 872
++4 * 872 872
++1 * 872 872
+
+fn=(200)
+0x402eda 901 428 0 428
++1 * 428
++3 * 428
++4 * 428 0 428
++4 * 428 0 428
++4 +2 428 428
++4 * 428 428
++4 * 428 428
++4 * 428 428
++4 * 428
++3 * 428 0 0 0 0 0 0 0 0 428 9
+jcnd=8/428 +51 +10 
+* * 
++2 +3 420 420
++4 * 420 420
++4 * 420 420
++4 -1 420 420
++4 * 420
++3 * 420
++3 * 420 0 420
+cfi=(3)
+cfn=(222)
+calls=420 0x403373 215 
+* * 15960 5460 5880 0 27 3 0 27 3 420 3
++5 +2 420 420
++4 * 420 420
++4 * 420
++4 * 420 420
++4 * 420 0 420
++4 * 420
+jump=420 +36 +8 
+* * 
++2 +6 8 8 0 1 0 0 1
++4 * 8
++3 * 8 0 8
+cfn=(202)
+calls=8 0x403688 556 
+* * 184 72 56 2 0 0 2
++5 * 8
++3 * 8 8
++4 * 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(15)
+cfn=(206)
+calls=8 0x4033a0 318 
+* * 12907 3942 3434 39 7 9 39 7 9 904 59 47
++5 +2 428 428
++1 * 428 428
+
+fn=(4)
+0x4030b2 310 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856
++2 * 856 0 856
++2 * 856 0 856
++1 * 856
++4 * 856 0 856 1 0 0 1
++4 * 856 0 856
++4 +2 856 856
++4 * 856
++3 * 856 0 856
+cfn=(6)
+calls=856 0x403b08 117 
+* * 5136 2568 1712 1 0 1 1 0 1
++5 * 856
++3 * 856 0 856
+cfi=(3)
+cfn=(8)
+calls=856 0x403afa -88 
+* * 5136 2568 1712 1 0 0 1
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(10)
+calls=856 0x402f54 645 
+* * 11128 5136 1712 1 1 0 1 1
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856
++3 * 856
++3 * 856 0 856
+cfn=(12)
+calls=856 0x403b16 134 
+* * 369922 79820 76797 29 30 23 29 30 23 43930 789 1712
++5 +4 856 856 0 1 0 0 1
++4 * 856
++3 * 856 0 856
+cfn=(40)
+calls=856 0x40333c 113 
+* * 5136 2568 1712 2 0 0 2
++5 * 856
++3 * 856 856
++4 * 856 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(42)
+calls=856 0x403ba4 565 
+* * 21400 8560 6848 3 0 0 3
++5 * 856
++3 * 856 856
++4 * 856
++3 * 856 0 856
+cfn=(46)
+calls=856 0x403b74 547 
+* * 21400 8560 6848
++5 * 856
++3 * 856
++3 * 856
++3 * 856
++3 * 856 0 856 1 0 0 1
+cfi=(11)
+cfn=(48)
+calls=856 0x403bd5 -60 
+* * 497086 168224 163948 26 3 3 26 3 3 18852 1074 1708 213
++5 -3 856 856
++4 * 856 0 856
++4 * 856
+jump=856 +28 +4 
+* * 
++28 +4 856
++4 * 856 856
++1 * 856 856
++2 * 856 856
++2 * 856 856
++1 * 856 856
+
+fn=(108)
+0x403a98 565 856 0 856 1 0 0 1
++1 * 856
++3 * 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++4 * 856 0 856
++4 * 856
++4 * 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfi=(10)
+cfn=(110)
+calls=856 0x404380 726 
+* * 8560 4280 3424 1 0 0 1
++5 * 856 856
++4 * 856 856
++1 * 856 856
+
+fn=(178)
+0x402e74 414 856 0 856
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856 1 0 0 1
++4 +2 856 856
++4 * 856
++3 * 856 0 856
+cfn=(40)
+calls=856 0x40333c 113 
+* * 5136 2568 1712
++5 * 856
++3 * 856 856
++4 * 856 856
++4 * 856 856
++4 * 856 856
++3 -1 856
++3 * 856
++3 * 856 0 856
+cfi=(14)
+cfn=(180)
+calls=856 0x40334a 148 
+* * 26536 8560 10272 2 0 0 2
++5 +1 856 856
++4 * 856
++3 * 856 0 856
+cfn=(186) std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+calls=856 0x4032ca 159 
+* * 175706 53176 35006 3 0 0 3 0 0 27576 61 1712
++5 * 856
+jump=856 +28 * 
+* * 
++28 * 856 0 0 1 0 0 1
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(210)
+0x4045cc 650 16 0 16 1 0 0 1
++1 * 16
++3 * 16
++4 * 16 0 16
++4 +1 16 16
++4 * 16
++3 * 16 0 16
+cfn=(82)
+calls=16 0x4039fc 117 
+* * 96 48 32
++5 * 16
++3 * 16 0 16
+cfi=(3)
+cfn=(212)
+calls=16 0x4048c3 221 
+* * 240 80 80
++5 * 16 16
++1 * 16 16
+
+fn=(96)
+0x403fbe 167 864 0 864 1 0 0 1
++1 * 864 0 0 1 0 0 1
++3 * 864
++4 * 864 0 864
++4 * 864 0 864
++4 0 864 864
++5 0 864 0 0 0 0 0 0 0 0 864
++2 0 864 864
++4 0 864 864
++4 0 864
++5 0 864
++3 0 864
++3 0 864 0 864
+fi=(6)
+cfi=(5)
+cfn=(100)
+calls=864 0x40461a 99 
+* 0 250386 42623 42893 38 14 49 38 14 49 36291 1420 1728
++5 0 864
+fi=(6)
+jump=864 +7 0 
+* 0 
++7 0 864 864
++1 0 864 864
+
+fn=(144)
+0x402d9a 770 277558 0 277558
++1 * 277558
++3 * 277558 0 277558
++4 * 277558 0 277558
++4 +1 277558 277558
++4 * 277558 277558
++3 * 277558 277558
++4 * 277558
++4 * 277558
++3 * 277558 277558
++1 * 277558 277558
+
+fn=(146)
+0x402dba 770 277558 0 277558
++1 * 277558
++3 * 277558 0 277558 1 0 0 1
++4 * 277558 0 277558
++4 +1 277558 277558
++4 * 277558 277558
++3 * 277558 277558
++4 * 277558
++4 * 277558
++3 * 277558 277558
++1 * 277558 277558
+
+fn=(192) std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+0x403296 79 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 856
++4 * 856
++3 * 856 0 856
+cfi=(4)
+cfn=(194)
+calls=856 0x403d7e +42 
+* * 11984 4280 4280 1 0 0 1
++5 * 856 856
++1 * 856 856
+
+fn=(254)
+0x40470e 650 16 0 16
++1 * 16
++3 * 16
++4 * 16 0 16
++4 +1 16 16
++4 * 16
++3 * 16 0 16
+cfn=(6)
+calls=16 0x403b08 117 
+* * 96 48 32
++5 * 16
++3 * 16 0 16
+cfi=(3)
+cfn=(256)
+calls=16 0x404978 221 
+* * 240 80 80
++5 * 16 16
++1 * 16 16
+
+fn=(186)
+0x4032ca 159 856 0 856 1 0 0 1
++1 * 856
++3 * 856 0 856
++1 * 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856
++4 * 856
++3 * 856 856
++4 * 856 856
++3 * 856
++3 * 856
++3 * 856
++4 * 856
++3 * 856 856
++4 * 856 856
++3 -1 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(188)
+calls=856 0x403d98 +11 
+* * 132050 36912 23878 1 0 0 1 0 0 27576 61 1712
++5 +1 856 856
++4 * 856
++3 * 856 0 856
+cfn=(192)
+calls=856 0x403296 -82 
+* * 19688 6848 6848 1 0 0 1
++5 * 856
+jump=856 +28 * 
+* * 
++28 * 856
++4 * 856 856
++1 * 856 856
++1 * 856 856
+
+fn=(2)
+0x402d74 645 3456 0 3456 1 0 0 1
++1 * 3456
++3 * 3456 0 3456 0 0 1 0 0 1
++4 +1 3456 3456
++4 * 3456 3456 0 1 1 0 1 1
++4 * 3456
++3 * 3456 3456
++4 * 3456 3456
++3 * 3456
++3 * 3456
++3 * 3456
++4 * 3456 3456
++1 * 3456 3456
+
+fn=(20)
+0x404412 179 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(22)
+calls=856 0x404236 -14 
+* * 298874 52428 52829 23 30 19 23 30 19 43930 789 1712
++5 * 856 856
++4 * 856 0 856
++3 +1 856 856
++4 * 856 856 0 1 0 0 1
++3 * 856 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++3 * 856 856
++4 * 856
++4 * 856
++3 * 856 856
++4 * 856 0 856
++4 +1 856 856
++1 * 856 856
+
+fn=(94)
+0x40432a 179 856 0 856
++1 * 856
++3 * 856
++4 * 856 0 856
++4 * 856 0 856
++4 +2 856 856
++4 * 856 856 0 1 0 0 1
++4 * 856
++3 * 856
++3 * 856 0 856
+cfn=(96)
+calls=856 0x403fbe -14 
+* * 260731 46236 45687 24 7 44 24 7 44 36601 1373 1712
++5 * 856 856
++4 * 856 0 856
++3 +1 856 856
++4 * 856 856
++3 * 856 856
++4 * 856 0 856
++4 +1 856 856
++4 * 856 856
++3 * 856 856
++4 * 856
++4 * 856
++3 * 856 856
++4 * 856 0 856
++4 +1 856 856
++1 * 856 856
+
+fn=(244)
+0x402f7a 901 428 0 428
++1 * 428
++3 * 428 0 0 1 0 0 1
++4 * 428 0 428
++4 * 428 0 428
++4 +2 428 428
++4 * 428 428
++4 * 428 428
++4 * 428 428
++4 * 428
++3 * 428 0 0 0 0 0 0 0 0 428
+jcnd=8/428 +51 +10 
+* * 
++2 +3 420 420
++4 * 420 420
++4 * 420 420
++4 -1 420 420
++4 * 420
++3 * 420
++3 * 420 0 420
+cfi=(3)
+cfn=(264)
+calls=420 0x4036b1 215 
+* * 15960 5460 5880 0 26 15 0 26 15 420
++5 +2 420 420
++4 * 420 420
++4 * 420
++4 * 420 420
++4 * 420 0 420
++4 * 420
+jump=420 +36 +8 
+* * 
++2 +6 8 8
++4 * 8
++3 * 8 0 8
+cfn=(246)
+calls=8 0x4039c4 556 
+* * 184 72 56
++5 * 8
++3 * 8 8
++4 * 8 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(15)
+cfn=(250)
+calls=8 0x4036de 318 
+* * 12002 3714 3244 23 2 30 23 2 30 719 49 47
++5 +2 428 428
++1 * 428 428
+
+fn=(258)
+0x4041ce 538 8 0 8
++1 * 8
++3 * 8
++4 * 8 0 8
++4 +1 8 8
++4 * 8
++4 * 8
++3 * 8
++3 * 8 0 8
+cfi=(10)
+cfn=(248)
+calls=8 0x4042c6 726 
+* * 80 40 32
++5 * 8 8
++4 * 8 8
++1 * 8 8
+
+ob=(2)
+fl=(9)
+fn=(170) _int_free
+0x3877c78650 0 1728 0 1728 1 0 0 1
++2 0 1728 0 1728
++2 0 1728 0 1728
++2 0 1728
++3 0 1728 0 1728
++2 0 1728 0 1728
++1 0 1728 0 1728
++1 0 1728
++3 0 1728
++4 0 1728 1728
++4 0 1728 0 1728
++4 0 1728
++3 0 1728
++4 0 1728
++3 0 1728
++3 0 1728
++3 0 1728 0 0 1 0 0 1 0 0 1728
++6 0 1728
++4 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728
++4 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728 1728
++7 0 1728 0 0 0 0 0 0 0 0 1728 2
+jcnd=1604/1728 0x3877c78778 0 
+* 0 
++6 0 124
++4 0 124 124
++4 0 124
++4 0 124 0 0 0 0 0 0 0 0 124
++6 0 124
++4 0 124 124 0 0 1 0 0 1
++7 0 124 0 0 1 0 0 1 0 0 124
++6 0 124 124
++6 0 124
++2 0 124 0 0 0 0 0 0 0 0 124
++6 0 124 124
++9 0 124 0 0 0 0 0 0 0 0 124
+jcnd=124/124 +3 0 
+* 0 
++3 0 124 0 124
++5 0 124
++3 0 124
++3 0 124
++2 0 124 124
++5 0 124
++5 0 124
++3 0 124 0 0 0 0 0 0 0 0 124
++6 0 124 124 0 1 0 0 1
++4 0 124
++6 0 124
++2 0 124
++4 0 124
+jump=124 +20 0 
+* 0 
++20 0 124
++3 0 124
++4 0 124
++3 0 124 0 0 0 0 0 0 0 0 124
+jcnd=124/124 +14 0 
+* 0 
++14 0 124 0 124
++4 0 124 0 0 1 0 0 1
++3 0 124 124
++9 0 124 0 0 0 0 0 0 0 0 124
+jcnd=124/124 +3 0 
+* 0 
++3 0 124 0 124
++4 0 124
++3 0 124 0 0 0 0 0 0 0 0 124
++2 0 124
++3 0 124 0 0 0 0 0 0 0 0 124
+jcnd=124/124 +11 0 
+* 0 
++11 0 124
++4 0 124 124
++1 0 124 124
++1 0 124 124
++2 0 124 124
++2 0 124 124
++2 0 124 124
++2 0 124 124
++4 0 1604
++2 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604 1604 0 1 0 0 1
++4 0 1604
++3 0 1604
++2 0 1604 0 0 0 0 0 0 0 0 1604
+jcnd=1604/1604 0x3877c78a40 0 
+* 0 
++6 0 1604 1604
++4 0 1604
++3 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604 1604
++5 0 1604
++4 0 1604 0 0 0 0 0 0 0 0 1604
+jcnd=1604/1604 0x3877c7907c 0 
+* 0 
++6 0 1604 1604
++5 0 1604
++4 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604
++4 0 1604 0 0 1 0 0 1 0 0 1604
++6 0 1604
++4 0 1604 1604
++7 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604 1604
++6 0 1604
++2 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604 1604
++4 0 1604 0 0 0 0 0 0 0 0 1604 5
+jcnd=1600/1604 +70 0 
+* 0 
++2 0 4 4
++3 0 4
++3 0 4
++3 0 4 4
++4 0 4 4
++4 0 4 4
++4 0 4 0 0 0 0 0 0 0 0 4 2
++6 0 4 4
++4 0 4 0 0 0 0 0 0 0 0 4
++6 0 4 4
++8 0 4 0 4
++4 0 4 0 4
++4 0 4 0 0 0 0 0 0 0 0 4
+jcnd=4/4 +15 0 
+* 0 
++15 0 1604 1604 0 1 0 0 1
++4 0 1604 0 0 0 0 0 0 0 0 1604 238
+jcnd=238/1604 0x3877c78bf0 0 
+* 0 
++6 0 1366 1366
++6 0 1366 0 0 1 0 0 1 0 0 1366 65
+jcnd=50/1366 0x3877c78a78 0 
+* 0 
++6 0 1316 1316
++5 0 1316 1316
++5 0 1316 1316
++4 0 1316 0 0 0 0 0 0 0 0 1316
++6 0 1316 1316
++4 0 1316 0 0 0 0 0 0 0 0 1316
++6 0 1316 1316
++9 0 1316 0 1316
++4 0 1316 0 1316
++4 0 1316 0 0 0 0 0 0 0 0 1316 180
+jcnd=619/1316 +16 0 
+* 0 
++2 0 697 697
++5 0 697
++3 0 697 0 0 1 0 0 1 0 0 697 1
+jcnd=1/697 0x3877c78ee4 0 
+* 0 
++6 0 1316
++3 0 1316
++4 0 1316 1316
++4 0 1316 1316
++4 0 1316 0 0 0 0 0 0 0 0 1316
+-12 0 50
++4 0 50 50
++4 0 50 50
++4 0 50 0 0 0 0 0 0 0 0 50
++6 0 1366
++7 0 1366 0 1366
++4 0 1366 0 1366
++4 0 1366 0 0 0 0 0 0 0 0 1366 20
+jcnd=212/1366 +18 0 
+* 0 
++2 0 1154 0 1154
++8 0 1154 0 1154
++8 0 1154 0 1154
++4 0 1154
++3 0 1154 0 1154 1 0 0 1
++4 0 1154
++4 0 1154 0 1154
++4 0 1154 0 1154
++4 0 1154
++7 0 1154 0 0 0 0 0 0 0 0 1154
+jcnd=1154/1154 0x3877c78b20 0 
+* 0 
+-30 0 212 0 212
++4 0 212
++3 0 212 0 212
++4 0 212
++4 0 212 0 212
++4 0 212 0 212
++4 0 212
++7 0 212 0 0 0 0 0 0 0 0 212
+jcnd=212/212 0x3877c78b20 0 
+* 0 
+-7 0 238
++7 0 238 0 0 0 0 0 0 0 0 238
+jcnd=238/238 0x3877c78b20 0 
+* 0 
+0x3877c78a40 0 1604 0 0 1 0 0 1
++5 0 1604 1604
++4 0 1604 1604
++7 0 1604 0 0 0 0 0 0 0 0 1604
+jcnd=1604/1604 +16 0 
+* 0 
++16 0 1604 0 1604
++5 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604
++3 0 1604
+jump=1604 0x3877c7878f 0 
+* 0 
++10 0 50 0 50
++6 0 50 0 0 1 0 0 1
+jump=50 0x3877c78885 0 
+* 0 
+0x3877c78b20 0 1604 1604 0 1 0 0 1
++4 0 1604
++2 0 1604 0 0 0 0 0 0 0 0 1604
++6 0 1604 1604
++7 0 1604 0 0 0 0 0 0 0 0 1604
+jcnd=1604/1604 +15 0 
+* 0 
++15 0 1604 0 1604 1 0 0 1
++4 0 1604 0 0 0 0 0 0 0 0 1604 2
++6 0 1604
++4 0 1604 1604
++1 0 1604 1604
++1 0 1604 1604
++2 0 1604 1604
++2 0 1604 1604
++2 0 1604 1604
++2 0 1604 1604
+0x3877c78bf0 0 238 0 0 1 0 0 1
++3 0 238 0 238
++4 0 238
++3 0 238
++4 0 238 0 238 1 0 0 1
++4 0 238
+jump=238 0x3877c788cf 0 
+* 0 
+0x3877c78ee4 0 1 1 0 1 0 0 1
++5 0 1 0 0 0 0 0 0 0 0 1
++6 0 1 1
++5 0 1 0 1
++4 0 1 1
++5 0 1 0 1 1 0 0 1
++4 0 1
+jump=1 0x3877c78882 0 
+* 0 
+0x3877c7907c 0 1604 1604 0 1 1 0 1 1
++4 0 1604 0 0 1 0 0 1
++7 0 1604
++4 0 1604
++3 0 1604
++3 0 1604 0 0 0 0 0 0 0 0 1604
+jcnd=1604/1604 0x3877c787ab 0 
+* 0 
+
+fn=(284) _wordcopy_fwd_aligned
+0x3877c89b20 0 1718 0 0 1 0 0 1
++7 0 1718
++3 0 1718
++3 0 1718 1718 0 0 1 0 0 1
++4 0 1718
++4 0 1718 0 0 0 0 0 0 0 0 0 0 1718 213
+jump=208 0x3877c89be8 0 
+* 0 
+jump=218 0x3877c89bd0 0 
+* 0 
+jump=208 0x3877c89bb8 0 
+* 0 
+jump=216 +11 0 
+* 0 
+jump=216 0x3877c89c48 0 
+* 0 
+jump=218 0x3877c89c30 0 
+* 0 
+jump=216 0x3877c89c18 0 
+* 0 
+jump=218 0x3877c89c00 0 
+* 0 
++11 0 216 216
++3 0 216
++4 0 216
++4 0 216 216
++4 0 216
++4 0 216 0 216
++4 0 216
++9 0 216 216
++4 0 216 0 216
++4 0 216 216
++4 0 216 0 216
++4 0 216 216
++4 0 216 0 216
++4 0 216 216
++4 0 216 0 216
++4 0 216
++4 0 216
++4 0 216 0 0 0 0 0 0 0 0 216
+jcnd=8/216 0x3877c89c60 0 
+* 0 
+-40 0 22742 22742
++4 0 22742 0 22742 0 0 33 0 0 33
++4 0 22742 22742
++4 0 22742 0 22742 0 0 3 0 0 3
++4 0 22742 22742
++4 0 22742 0 22742 0 0 3 0 0 3
++4 0 22742 22742
++4 0 22742 0 22742 0 0 15 0 0 15
++4 0 22742
++4 0 22742
++4 0 22742 0 0 0 0 0 0 0 0 22742 1245
+jcnd=1682/22742 0x3877c89c60 0 
+* 0 
+-32 0 218 218
++4 0 218 0 218
++4 0 218 218
++4 0 218 0 218
++4 0 218 218
++4 0 218 0 218
++4 0 218
++4 0 218
++4 0 218 0 0 0 0 0 0 0 0 218
+jcnd=10/218 0x3877c89c60 0 
+* 0 
+-24 0 216 216
++4 0 216 0 216
++4 0 216 216
++4 0 216 0 216
++4 0 216
++4 0 216
++4 0 216 0 0 0 0 0 0 0 0 216
+jcnd=8/216 0x3877c89c60 0 
+* 0 
+-16 0 218 218 0 1 0 0 1
++4 0 218 0 218
++4 0 218 0 0 1 0 0 1
++4 0 218
++4 0 218 0 0 0 0 0 0 0 0 218 4
+jcnd=10/218 0x3877c89c60 0 
+* 0 
++6 0 21892
++4 0 21892 21892
++3 0 21892 0 21892 0 0 3 0 0 3
++3 0 21892 21892
++4 0 21892 0 21892 0 0 1 0 0 1
++4 0 21892 21892
++4 0 21892 0 21892 0 0 1 0 0 1
++4 0 21892 21892
++4 0 21892 0 21892
++4 0 21892
+jump=21892 -80 0 
+* 0 
+-30 0 208 208
++3 0 208 0 208
++3 0 208 208
++4 0 208 0 208
++4 0 208 208
++4 0 208 0 208 0 0 1 0 0 1
++4 0 208 208
++4 0 208 0 208
++4 0 208
+jump=208 -80 0 
+* 0 
+-24 0 218 218
++4 0 218 0 218
++4 0 218 218
++4 0 218 0 218
++4 0 218 218
++4 0 218 0 218
++4 0 218
+jump=218 -80 0 
+* 0 
+-16 0 208 208
++4 0 208 0 208
++4 0 208 208
++4 0 208 0 208
++4 0 208
+jump=208 -80 0 
+* 0 
++8 0 208 208
++3 0 208
++4 0 208 0 0 1 0 0 1
++4 0 208
++4 0 208
+jump=208 -39 0 
+* 0 
++9 0 218
++3 0 218 0 0 0 0 0 0 0 0 218
++6 0 218 218
++3 0 218
++4 0 218
+jump=218 -72 0 
+* 0 
++8 0 208
++4 0 208 208
++3 0 208 0 0 0 0 0 0 0 0 208
++2 0 208
++4 0 208
+jump=208 -99 0 
+* 0 
++11 0 218 218 0 1 0 0 1
++3 0 218
++4 0 218
++4 0 218
++4 0 218
+jump=218 0x3877c89b78 0 
+* 0 
++9 0 216 216
++3 0 216
++4 0 216
++4 0 216
++4 0 216
+jump=216 0x3877c89b70 0 
+* 0 
++9 0 218 218
++3 0 218
++4 0 218
++4 0 218
++4 0 218
+jump=218 0x3877c89b68 0 
+* 0 
++9 0 216 216
++3 0 216
++4 0 216
++4 0 216
++4 0 216
+jump=216 0x3877c89b60 0 
+* 0 
++9 0 1718 0 1718 1 0 0 1
++3 0 1718 1718
+
+fn=(104) alloc_perturb
+0x3877c77180 0 1598 1598 0 1 0 0 1
++6 0 1598
++2 0 1598 0 0 0 0 0 0 0 0 1598 36
++2 0 1598 1598
+
+fn=(38) _int_malloc
+0x3877c79a00 0 1728 0 1728 1 0 0 1
++2 0 1728
++3 0 1728 0 1728
++2 0 1728 0 1728
++2 0 1728 0 1728 0 0 1 0 0 1
++2 0 1728
++3 0 1728 0 1728
++1 0 1728 0 1728
++1 0 1728
++4 0 1728
++4 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728
++4 0 1728
++6 0 1728
++3 0 1728
++4 0 1728
++4 0 1728
++4 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728 1728 0 1 1 0 1 1
++7 0 1728 0 0 0 0 0 0 0 0 1728 5
+jcnd=1606/1728 0x3877c79af8 0 
+* 0 
++6 0 122
++3 0 122
++3 0 122
++3 0 122
++2 0 122 122 0 0 1 0 0 1
++5 0 122
++3 0 122 0 0 0 0 0 0 0 0 122 25
+jcnd=17/122 0x3877c79af8 0 
+* 0 
++6 0 105
++4 0 105 105 0 0 1 0 0 1
++4 0 105
++3 0 105
++4 0 105 105 0 0 1 0 0 1
++9 0 105 0 0 0 0 0 0 0 0 105
+jcnd=105/105 +3 0 
+* 0 
++3 0 105 0 105 1 0 0 1
++5 0 105
++3 0 105
++3 0 105 0 0 0 0 0 0 0 0 105
++2 0 105
+jump=105 0x3877c7a2db 0 
+* 0 
++46 0 105 105
++4 0 105 0 0 1 0 0 1
++3 0 105
++3 0 105
++2 0 105 0 0 0 0 0 0 0 0 105
++6 0 130 130
++6 0 130
++4 0 130
++2 0 130 0 0 0 0 0 0 0 0 130
++6 0 130
++3 0 130
++4 0 130 130
++1 0 130 130
++1 0 130 130
++2 0 130 130
++2 0 130 130
++2 0 130 130
++2 0 130 130
+-14 0 1598
++4 0 1598 1598
++1 0 1598 1598
++1 0 1598 1598
++2 0 1598 1598
++2 0 1598 1598
++2 0 1598 1598
++2 0 1598 1598
++7 0 1623
++7 0 1623 0 0 1 0 0 1 0 0 1623 5
+jcnd=720/1623 0x3877c79b70 0 
+* 0 
++2 0 903
++3 0 903
++5 0 903
++3 0 903
++4 0 903 0 903
++4 0 903
++2 0 903
++5 0 903 903 0 0 13 0 0 13
++4 0 903
++3 0 903 0 0 0 0 0 0 0 0 903
+jcnd=903/903 0x3877c79bc2 0 
+* 0 
++78 0 720 0 0 1 0 0 1
++3 0 720
++4 0 720
++4 0 720 0 0 1 0 0 1 0 0 720
+jcnd=720/720 0x3877c7a1a4 0 
+* 0 
++30 0 720 720
++6 0 720
++5 0 720 0 0 0 0 0 0 0 0 720 1
+jcnd=719/720 +30 0 
+* 0 
++2 0 1
++3 0 1 0 1
++5 0 1 0 1
++5 0 1 0 1
+cfn=(286) malloc_consolidate
+calls=1 0x3877c75e10 0 
+* 0 920 249 194 8 2 0 8 2 0 190 30
++5 0 1 1
++5 0 1 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++3 0 1
++4 0 1 0 1
++5 0 1
++3 0 1 0 1
++4 0 1 0 1
++4 0 1 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
++3 0 1
++4 0 1
++4 0 1
++4 0 1 0 1
++4 0 1
++4 0 1 0 1
++5 0 1 0 1
++5 0 1
++3 0 1
++3 0 1 0 1
++5 0 1
++5 0 1
++3 0 1 0 1
++4 0 1 0 1
++4 0 1
++6 0 1 0 1
++4 0 1 0 1
++5 0 1
++3 0 1
++3 0 1
++3 0 1
+jump=1 +87 0 
+* 0 
+0x3877c79bc2 0 1622 0 0 1 0 0 1
++3 0 1622
++3 0 1622
++3 0 1622
++4 0 1622
++3 0 1622
++4 0 1622 0 1622
++5 0 1622
++3 0 1622 0 1622
++4 0 1622 0 1622
++4 0 1622 0 1622
++5 0 1622
++3 0 1622
++3 0 1622
++3 0 1622
++3 0 1622
++4 0 1622
++4 0 1622 0 0 1 0 0 1
++4 0 1622 0 1622
++4 0 1622
++4 0 1622 0 1622
++5 0 1622 0 1622
++5 0 1622
++3 0 1622
++3 0 1622 0 1622
++5 0 1622
++5 0 1622
++3 0 1622 0 1622
++4 0 1622 0 1622
++4 0 1622
++6 0 1622 0 1622
++4 0 1622 0 1622
++5 0 1622 0 0 1 0 0 1
++3 0 1622
++3 0 1622
++3 0 1622
+jump=1622 +87 0 
+* 0 
++8 0 699
++3 0 699
++4 0 699
++2 0 699
++2 0 699
++3 0 699
++3 0 699
++3 0 699
++2 0 699
++2 0 699
++5 0 699
++2 0 699 699
++4 0 699
++3 0 699
++4 0 699 0 699
++4 0 699 0 699
++8 0 699
++7 0 699 0 699
++4 0 699 0 699
++4 0 699 0 699
++4 0 699 0 0 0 0 0 0 0 0 699
+-38 0 900
++3 0 900
++4 0 900 0 900
++4 0 900 0 900
++8 0 900
++7 0 900 0 900
++4 0 900 0 900
++4 0 900 0 900
++4 0 900 0 0 0 0 0 0 0 0 900
++6 0 3222 3222 0 1 0 0 1
++4 0 3222
++3 0 3222 0 0 0 0 0 0 0 0 3222 152
+jcnd=1335/3222 0x3877c79ef0 0 
+* 0 
++6 0 1887 1887
++4 0 1887 1887
++4 0 1887
++4 0 1887 0 0 0 0 0 0 0 0 1887
++6 0 1887 1887 0 1 0 0 1
++7 0 1887 0 0 0 0 0 0 0 0 1887
++6 0 1887
++4 0 1887
++7 0 1887 0 0 0 0 0 0 0 0 1887 4
+jcnd=815/1887 +11 0 
+* 0 
++2 0 1072
++3 0 1072 0 0 0 0 0 0 0 0 1072 174
+jcnd=881/1072 0x3877c79e28 0 
+* 0 
++6 0 1624
++3 0 1624 0 1624
++4 0 1624 0 1624
++5 0 1624 0 0 0 0 0 0 0 0 1624 16
+jcnd=25/1624 0x3877c7a090 0 
+* 0 
++6 0 1599
++7 0 1599 0 0 0 0 0 0 0 0 1599 343
+jcnd=699/1599 0x3877c79c50 0 
+* 0 
++6 0 900 0 0 1 0 0 1
++3 0 900
++4 0 900
++4 0 900 0 0 0 0 0 0 0 0 900 8
+jcnd=454/900 0x3877c79db0 0 
+* 0 
++6 0 446
++3 0 446
++4 0 446
++2 0 446
++2 0 446
++3 0 446
++3 0 446
++8 0 446
++3 0 446
++2 0 446
++2 0 446
++4 0 446 446
++4 0 446
++3 0 446 0 0 0 0 0 0 0 0 446 3
+jcnd=446/446 0x3877c79e15 0 
+* 0 
+-36 0 454
++2 0 454
++2 0 454
++3 0 454
++3 0 454
++8 0 454
++3 0 454
++2 0 454
++2 0 454
++4 0 454 454 0 0 1 0 0 1
++4 0 454
++3 0 454 0 0 1 0 0 1 0 0 454
+jcnd=454/454 0x3877c79e15 0 
+* 0 
+0x3877c79db0 0 454 0 0 1 0 0 1
++3 0 454
++4 0 454
++4 0 454 0 0 0 0 0 0 0 0 454
++2 0 454
++3 0 454 0 0 1 0 0 1
++7 0 454
+jump=454 0x3877c79d18 0 
+* 0 
++78 0 900 0 900
++4 0 900 0 900
++4 0 900
++3 0 900
+jump=900 0x3877c79c73 0 
+* 0 
++8 0 881 881 0 1 0 0 1
++4 0 881
++3 0 881 0 0 0 0 0 0 0 0 881 252
+jcnd=443/881 0x3877c79ce1 0 
+* 0 
++6 0 438 438
++5 0 438 0 0 0 0 0 0 0 0 438 8
+jcnd=175/438 0x3877c79ce1 0 
+* 0 
++6 0 263 0 0 1 0 0 1
++3 0 263
++3 0 263
++3 0 263
++7 0 263 0 263
++4 0 263 0 263
++4 0 263
++3 0 263 0 263
++4 0 263 0 263 0 0 29 0 0 29
++4 0 263 0 263
++4 0 263 0 0 0 0 0 0 0 0 263 5
+jcnd=13/263 +18 0 
+* 0 
++2 0 250 0 250
++8 0 250 0 250
++8 0 250
++7 0 250 0 250
++4 0 250
++3 0 250
++3 0 250
++3 0 250
++4 0 250
++3 0 250
++4 0 250
++3 0 250
++3 0 250
++4 0 250 0 250
++4 0 250 0 250
++4 0 250
++4 0 250
++3 0 250 0 250
+cfn=(104)
+calls=250 0x3877c77180 0 
+* 0 1000 500 0 0 0 0 0 0 0 250
+-56 0 13
++7 0 13 0 13 1 0 0 1
++4 0 13
++3 0 13
++3 0 13
++3 0 13
++4 0 13
++3 0 13
++4 0 13
++3 0 13
++3 0 13
++4 0 13 0 13
++4 0 13 0 13 0 0 2 0 0 2
++4 0 13
++4 0 13
++3 0 13 0 13
+cfn=(104)
+calls=13 0x3877c77180 0 
+* 0 52 26 0 0 0 0 0 0 0 13
++5 0 263
++3 0 263
+jump=263 0x3877c79ae3 0 
+* 0 
++55 0 1335 0 0 1 0 0 1
++7 0 1335
++3 0 1335 0 0 0 0 0 0 0 0 1335 5
+jcnd=708/1335 0x3877c7a0b0 0 
+* 0 
++6 0 1318 1318 0 1 0 0 1
++4 0 1318
++3 0 1318
++3 0 1318
++2 0 1318
++4 0 1318
++3 0 1318
++3 0 1318
++2 0 1318
++2 0 1318
++2 0 1318
++2 0 1318 1318 0 0 1 0 0 1
++8 0 1318
++5 0 1318
++5 0 1318
++2 0 1318 0 0 0 0 0 0 0 0 1318
+-2 0 527
++2 0 527 0 0 0 0 0 0 0 0 527
++2 0 1845
++2 0 1845 0 0 0 0 0 0 0 0 1845 48
+jcnd=945/1845 +64 0 
+* 0 
++2 0 900
++8 0 900
++3 0 900
++3 0 900 0 0 0 0 0 0 0 0 900 1
+jcnd=1/900 0x3877c79fc0 0 
+* 0 
+-6 0 722
++3 0 722
++3 0 722 0 0 0 0 0 0 0 0 722 3
+jcnd=237/722 0x3877c79fc0 0 
+* 0 
++2 0 1384
++2 0 1384 1384
++8 0 1384
++2 0 1384 0 0 0 0 0 0 0 0 1384 25
+jcnd=722/1384 -20 0 
+* 0 
++2 0 662
++2 0 662
++5 0 662
++3 0 662
++3 0 662
++2 0 662
++2 0 662
++5 0 662 0 0 0 0 0 0 0 0 662 1
+jcnd=1/662 +14 0 
+* 0 
++2 0 661
++2 0 661
++4 0 661
++2 0 661
++2 0 661 0 0 0 0 0 0 0 0 661 2
+jcnd=661/661 -8 0 
+* 0 
+-8 0 6460
++4 0 6460
++2 0 6460
++2 0 6460 0 0 0 0 0 0 0 0 6460 373
+jcnd=4947/6460 -8 0 
+* 0 
+-2 0 945 0 0 1 0 0 1
++2 0 945 0 0 0 0 0 0 0 0 945 16
+jcnd=852/945 -8 0 
+* 0 
++2 0 1607 1607 0 0 7 0 0 7
++4 0 1607 0 0 1 0 0 1
++3 0 1607 0 0 0 0 0 0 0 0 1607 529
+jcnd=1080/1607 0x3877c7a1cf 0 
+* 0 
++6 0 527
++2 0 527
++4 0 527
++2 0 527
++2 0 527
++2 0 527 0 527
++8 0 527
+jump=527 0x3877c79f30 0 
+* 0 
++37 0 238 238 0 1 0 0 1
++5 0 238 238
++4 0 238
++4 0 238 238
++5 0 238 0 0 0 0 0 0 0 0 238
+jcnd=238/238 0x3877c7a41c 0 
+* 0 
+0x3877c7a090 0 25 0 0 1 0 0 1
++7 0 25 0 25
++6 0 25
++3 0 25 0 0 0 0 0 0 0 0 25
+jcnd=25/25 0x3877c79ace 0 
+* 0 
++16 0 708 708
++4 0 708
++4 0 708
++2 0 708
++5 0 708 708 0 1 3 0 1 3
++4 0 708
++3 0 708 0 0 0 0 0 0 0 0 708 17
+jcnd=643/708 0x3877c79f00 0 
+* 0 
++6 0 65 65
++4 0 65 0 0 0 0 0 0 0 0 65 5
+jcnd=48/65 0x3877c79f00 0 
+* 0 
++6 0 17
++3 0 17 17
++4 0 17 17
++4 0 17
++3 0 17
++4 0 17
++3 0 17 0 0 0 0 0 0 0 0 17
++2 0 17 17
++4 0 17
++3 0 17 0 0 0 0 0 0 0 0 17
+jcnd=17/17 0x3877c7a650 0 
+* 0 
++26 0 17 0 0 1 0 0 1
++3 0 17 17
++4 0 17
++3 0 17 17
++4 0 17 0 0 0 0 0 0 0 0 17
++6 0 17 17
++4 0 17 0 0 0 0 0 0 0 0 17 2
++6 0 17 17
++8 0 17 0 17
++4 0 17 0 17
++4 0 17 0 0 0 0 0 0 0 0 17
++2 0 17 17 0 1 0 0 1
++4 0 17
++3 0 17 0 0 0 0 0 0 0 0 17 17
+jcnd=17/17 0x3877c7a659 0 
+* 0 
++6 0 17
++4 0 17 0 0 0 0 0 0 0 0 17 4
+jcnd=8/17 0x3877c7a2e3 0 
+* 0 
++6 0 9 9
++4 0 9
++7 0 9 9
++4 0 9 0 0 0 0 0 0 0 0 9
++6 0 9
++4 0 9
++7 0 9 0 9
++4 0 9 0 9
++4 0 9 0 9
++4 0 9 0 9
++4 0 9 0 0 0 0 0 0 0 0 9
+jcnd=9/9 0x3877c7a285 0 
+* 0 
++31 0 720 0 0 1 0 0 1
++3 0 720 0 720
++4 0 720
+jump=720 0x3877c79b99 0 
+* 0 
++36 0 1080 1080 0 1 3 0 1 3
++4 0 1080 1080 0 0 1 0 0 1
++4 0 1080
++3 0 1080 1080
++4 0 1080
++4 0 1080
++3 0 1080
++3 0 1080 1080
++4 0 1080 0 0 0 0 0 0 0 0 1080
++6 0 1080 1080
++4 0 1080 0 0 0 0 0 0 0 0 1080
++6 0 1080 1080 0 1 0 0 1
++8 0 1080 0 1080
++4 0 1080 0 1080
++4 0 1080 0 0 0 0 0 0 0 0 1080 66
+jcnd=198/1080 +38 0 
+* 0 
++2 0 882 882 0 0 1 0 0 1
++4 0 882
++3 0 882 0 0 0 0 0 0 0 0 882
++2 0 882 882
++5 0 882 0 0 0 0 0 0 0 0 882
++6 0 882 882
++4 0 882 0 882
++4 0 882 882
++4 0 882 0 882
++4 0 882
++4 0 882 0 0 0 0 0 0 0 0 882
+-4 0 198
++4 0 198 0 0 0 0 0 0 0 0 198 7
+jcnd=12/198 0x3877c7a2e3 0 
+* 0 
++6 0 1068 1068
++4 0 1068 1068 0 1 0 0 1
++4 0 1068 0 0 0 0 0 0 0 0 1068
++6 0 1068
++4 0 1068
++7 0 1068 0 1068 0 0 20 0 0 20
++4 0 1068 0 1068
++4 0 1068 0 1068
++4 0 1068 0 1068
++4 0 1068 0 0 0 0 0 0 0 0 1068 4
+jcnd=453/1068 +7 0 
+* 0 
++2 0 615 0 615
++5 0 615
++7 0 615 0 0 0 0 0 0 0 0 615 2
+jcnd=186/615 +18 0 
+* 0 
+-7 0 453
++7 0 453 0 0 0 0 0 0 0 0 453 4
+jcnd=427/453 +18 0 
+* 0 
++2 0 455 0 455 0 0 7 0 0 7
++8 0 455 0 455
++8 0 455
++7 0 455 0 455 0 0 2 0 0 2
++4 0 455
++3 0 455
++3 0 455
++4 0 455
++3 0 455
++4 0 455
++3 0 455
++3 0 455
++4 0 455 0 455
++4 0 455 0 455 0 0 1 0 0 1
++4 0 455
+jump=455 +71 0 
+* 0 
+-46 0 622 0 0 1 0 0 1
++7 0 622 0 622 0 0 1 0 0 1
++4 0 622
++3 0 622
++3 0 622
++4 0 622
++3 0 622
++4 0 622
++3 0 622
++3 0 622
++4 0 622 0 622
++4 0 622 0 622 0 0 2 0 0 2
++4 0 622
+jump=622 +71 0 
+* 0 
++40 0 105 0 0 1 0 0 1
++3 0 105
+jump=105 0x3877c79abc 0 
+* 0 
++5 0 20
++7 0 20 0 20
++6 0 20
++3 0 20 0 0 0 0 0 0 0 0 20 2
+jcnd=20/20 +7 0 
+* 0 
++7 0 1097
++4 0 1097 0 0 1 0 0 1
++3 0 1097
++3 0 1097 0 1097
+cfn=(104)
+calls=1097 0x3877c77180 0 
+* 0 4388 2194 0 1 0 0 1 0 0 1097 35
++5 0 1097
++3 0 1097
+jump=1097 0x3877c79ae3 0 
+* 0 
+0x3877c7a41c 0 238 0 0 1 0 0 1
++7 0 238
++2 0 238
++4 0 238
++3 0 238
++3 0 238 0 238
++5 0 238
++3 0 238
++4 0 238
++3 0 238 0 0 1 0 0 1
++4 0 238
++4 0 238
++3 0 238
++4 0 238 0 238
++4 0 238 0 238 0 0 9 0 0 9
++4 0 238
++3 0 238
++3 0 238 0 238
+cfn=(104)
+calls=238 0x3877c77180 0 
+* 0 952 476 0 0 0 0 0 0 0 238 1
++5 0 238
++3 0 238
+jump=238 0x3877c79ae3 0 
+* 0 
+0x3877c7a650 0 17 17 0 1 0 0 1
++4 0 17
+jump=17 0x3877c7a10e 0 
+* 0 
++5 0 17 17
++5 0 17 0 0 0 0 0 0 0 0 17
++2 0 17 17
++4 0 17 0 17
++4 0 17 17
++4 0 17 0 17
++4 0 17
+jump=17 0x3877c7a14b 0 
+* 0 
+
+fn=(36) malloc
+0x3877c7aa50 0 1728 0 1728 1 0 0 1
++5 0 1728 0 1728
++5 0 1728
++3 0 1728 0 1728
++5 0 1728
++4 0 1728 1728 0 0 1 0 0 1
++7 0 1728 1728 0 0 1 0 0 1
++3 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728 1728 0 0 1 0 0 1
++7 0 1728 1728 0 1 1 0 1 1
++4 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++2 0 1728 1728 0 0 1 0 0 1
++3 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
+jcnd=1728/1728 +97 0 
+* 0 
++18 0 1728
++3 0 1728
++3 0 1728 0 1728
+cfn=(38)
+calls=1728 0x3877c79a00 0 
+* 0 392822 51450 63356 47 36 74 47 36 74 58982 2200
++5 0 1728
++3 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++2 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++2 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728 11
++2 0 1728 1728
++7 0 1728 0 0 0 0 0 0 0 0 1728
+jcnd=1728/1728 +13 0 
+* 0 
++13 0 1728 0 1728
++2 0 1728 0 0 0 0 0 0 0 0 1728 25
++6 0 1728
++3 0 1728 1728
++4 0 1728 1728
++5 0 1728 1728
++5 0 1728
++4 0 1728 1728
++1 0 1728 0 0 1 0 0 1
++5 0 1728 1728 0 0 1 0 0 1
++7 0 1728 0 0 0 0 0 0 0 0 1728
+jcnd=1728/1728 +14 0 
+* 0 
++14 0 1728 0 1728 1 0 0 1
++3 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728
+jump=1728 0x3877c7aaa1 0 
+* 0 
+
+fn=(78)
+0x3877c83840 0 1728 0 1728 1 0 0 1
++2 0 1728
++3 0 1728
++3 0 1728 0 1728
++2 0 1728
++3 0 1728 0 1728
++1 0 1728
++3 0 1728 0 1728
++1 0 1728
++3 0 1728
++4 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728
++4 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728 4
+jcnd=10/1728 0x3877c838d1 0 
+* 0 
++2 0 1718
++3 0 1718
++3 0 1718
++3 0 1718
++3 0 1718
++3 0 1718 0 0 0 0 0 0 0 0 1718
+jcnd=1718/1718 +41 0 
+* 0 
++41 0 1718 0 0 1 0 0 1
++3 0 1718 0 0 0 0 0 0 0 0 1718
+jcnd=1718/1718 0x3877c839c0 0 
+* 0 
++24 0 1718
++3 0 1718
++4 0 1718
++3 0 1718
++3 0 1718
++3 0 1718
++3 0 1718
++3 0 1718 0 0 0 0 0 0 0 0 1718 870
+jcnd=866/1718 +32 0 
+* 0 
+-3 0 10 0 0 1 0 0 1
++3 0 10 0 0 0 0 0 0 0 0 10
++2 0 862
++10 0 862 862 0 0 1 0 0 1
++3 0 862
++4 0 862 0 862
++3 0 862
++4 0 862
++4 0 862 0 0 0 0 0 0 0 0 862
+jcnd=862/862 -18 0 
+* 0 
+-18 0 2642 2642
++3 0 2642
++4 0 2642 0 2642
++3 0 2642
++4 0 2642
++4 0 2642 0 0 0 0 0 0 0 0 2642 8
+jcnd=1780/2642 -18 0 
+* 0 
++2 0 1728
++4 0 1728
++3 0 1728 1728
++1 0 1728 1728
++1 0 1728 1728
++2 0 1728 1728 0 1 0 0 1
++2 0 1728 1728
+0x3877c839c0 0 1718 0 0 1 0 0 1
++3 0 1718
++3 0 1718
++3 0 1718
++4 0 1718 0 1718 0 0 1 0 0 1
+cfn=(284)
+calls=1718 0x3877c89b20 0 
+* 0 503226 187976 184540 6 1 60 6 1 60 24036 1249 1718 213
++5 0 1718
+jump=1718 0x3877c838be 0 
+* 0 
+
+fn=(168) free
+0x3877c7b8b0 0 1728 1728 0 1 1 0 1 1
++7 0 1728 1728 0 0 1 0 0 1
++3 0 1728
++3 0 1728 0 0 1 0 0 1 0 0 1728
++6 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
++6 0 1728 1728
++4 0 1728
++4 0 1728
++2 0 1728 0 0 0 0 0 0 0 0 1728
++2 0 1728
++2 0 1728
++7 0 1728 0 0 0 0 0 0 0 0 1728
+jcnd=1728/1728 +14 0 
+* 0 
++14 0 1728
++2 0 1728
+cfn=(170)
+calls=1728 0x3877c78650 0 
+* 0 180798 48674 29348 21 2 0 21 2 0 44052 515
+
+fn=(286)
+0x3877c75e10 0 1 0 1 1 0 0 1
++2 0 1
++3 0 1 0 1
++2 0 1 0 1
++2 0 1 0 1
++2 0 1 0 1
++1 0 1 0 1
++1 0 1
++4 0 1 1
++8 0 1 0 0 0 0 0 0 0 0 1
++6 0 1 1
++9 0 1 0 0 0 0 0 0 0 0 1
+jcnd=1/1 +3 0 
+* 0 
++3 0 1 0 1
++4 0 1 0 0 1 0 0 1
++4 0 1
++4 0 1
++4 0 1
++5 0 1
++2 0 1 1 1 0 0 0 0 0 0 1
++3 0 1
++3 0 1 0 0 0 0 0 0 0 0 1
+jcnd=1/1 0x3877c75ef2 0 
+* 0 
+-8 0 9
++2 0 9 9 9 0 0 0 0 0 0 9
++3 0 9
++3 0 9 0 0 0 0 0 0 0 0 9 1
+jcnd=6/9 0x3877c75ef2 0 
+* 0 
++6 0 3
+jump=3 0x3877c75f78 0 
+* 0 
++10 0 5 5
++5 0 5
++3 0 5 5
++5 0 5 5
++4 0 5 0 0 0 0 0 0 0 0 5
++6 0 5 5
++4 0 5 0 0 0 0 0 0 0 0 5
++6 0 5 5
++9 0 5 0 5
++4 0 5 0 5
++4 0 5 0 0 0 0 0 0 0 0 5 1
+jcnd=5/5 +16 0 
+* 0 
++16 0 20 20 0 1 0 0 1
++4 0 20
++7 0 20 0 20
++4 0 20 0 20
++4 0 20 0 0 0 0 0 0 0 0 20 3
+jcnd=18/20 +18 0 
+* 0 
++2 0 2 0 2
++8 0 2 0 2
++8 0 2
++3 0 2 0 2
++4 0 2 0 2
++4 0 2
++4 0 2 0 2
++4 0 2 0 2
++4 0 2
++3 0 2
++3 0 2 0 0 0 0 0 0 0 0 2 1
+jcnd=1/2 0x3877c75f78 0 
+* 0 
+-29 0 18
++3 0 18 0 18
++4 0 18 0 18
++4 0 18
++4 0 18 0 18
++4 0 18 0 18
++4 0 18
++3 0 18
++3 0 18 0 0 0 0 0 0 0 0 18 11
+jcnd=6/18 0x3877c75f78 0 
+* 0 
++6 0 20 20 0 1 0 0 1
++4 0 20 20
++4 0 20
++3 0 20 0 0 1 0 0 1
++4 0 20
++4 0 20 20
++5 0 20
++4 0 20
++2 0 20 0 0 0 0 0 0 0 0 20 4
+jcnd=6/20 +70 0 
+* 0 
++2 0 14 14
++3 0 14
++3 0 14
++3 0 14 14
++4 0 14 14
++4 0 14 14
++4 0 14 0 0 0 0 0 0 0 0 14
++6 0 14 14
++4 0 14 0 0 0 0 0 0 0 0 14
++6 0 14 14
++8 0 14 0 14
++4 0 14 0 14
++4 0 14 0 0 0 0 0 0 0 0 14 3
+jcnd=13/14 +15 0 
+* 0 
++2 0 1 1
++4 0 1
++3 0 1 0 0 0 0 0 0 0 0 1
++6 0 20 20 0 1 0 0 1
++4 0 20 0 0 0 0 0 0 0 0 20
++2 0 20 20 0 0 2 0 0 2
++6 0 20 0 0 0 0 0 0 0 0 20 6
+jcnd=5/20 0x3877c75e68 0 
+* 0 
++6 0 15 0 15
++6 0 15
+jump=15 0x3877c75eaa 0 
+* 0 
++10 0 10
++3 0 10 0 0 1 0 0 1 0 0 10
+jcnd=1/10 0x3877c76168 0 
+* 0 
++6 0 9
++4 0 9
+jump=9 0x3877c75e50 0 
+* 0 
+0x3877c76168 0 1 0 0 1 0 0 1
++4 0 1 1
++1 0 1 1
++1 0 1 1
++2 0 1 1
++2 0 1 1
++2 0 1 1
++2 0 1 1
+
+ob=(5)
+fl=(8)
+fn=(164)
+0x387e4bb2f0 0 1728 0 0 1 0 0 1
++3 0 1728 0 0 0 0 0 0 0 0 1728
++2 0 1728
+cob=(2)
+cfi=(9)
+cfn=(168)
+calls=1728 0x3877c7b8b0 0 
+* 0 206718 53858 29348 23 4 0 23 4 0 50964 515
+* 0 1728 1728 0 1 1 0 1 1 0 0 0 1728
+
+fn=(32)
+0x387e4bd0b0 0 1728 0 1728 1 0 0 1
++1 0 1728
++5 0 1728
++3 0 1728 0 1728
++1 0 1728
++4 0 1728 0 0 1 0 0 1
++3 0 1728
++4 0 1728
++3 0 1728 0 1728 0 0 1 0 0 1
+cob=(2)
+cfi=(9)
+cfn=(36)
+calls=1728 0x3877c7aa50 0 
+* 0 465398 70458 73724 51 42 74 51 42 74 76262 2236
+* 0 1728 1728 0 1 1 0 1 1 0 0 0 1728
++5 0 1728
++3 0 1728 0 0 0 0 0 0 0 0 1728
+jcnd=1728/1728 +96 0 
+* 0 
++96 0 1728 0 0 1 0 0 1
++4 0 1728 1728
++1 0 1728 1728
++1 0 1728 1728
+
+totals: 16632898 6888267 3931681 245 113 170 245 113 170 454834 6194 10358 213
