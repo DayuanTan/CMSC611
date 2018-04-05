@@ -5,12 +5,13 @@
 #include <string.h>
 #include <vector>
 #include <math.h>
+#include <valgrind/callgrind.h>
 
 using namespace std;
 
 float get_b1(vector<float> nums, vector<int> days){
   int size = nums.size() + 1;
-  float mean_nums = 0, mean_days = 0;
+  float mean_nums = 0, mean_days = 0, temp, temp2;
   float sum_xy = 0, sum_xx = 0;
   float b1;
   for(int i = 0; i < size-1; i++){
@@ -20,8 +21,10 @@ float get_b1(vector<float> nums, vector<int> days){
   mean_nums /= (size-1);
   mean_days /= (size-1);
   for(int i = 0; i < size-1; i++){
-    sum_xy += ((days[i] - mean_days) * (nums[i] - mean_nums));
-    sum_xx += (pow((days[i] - mean_days), 2));
+    temp = days[i] - mean_days;
+    temp2 = nums[i] - mean_nums;
+    sum_xy += temp1 * temp2;
+    sum_xx += temp * temp;
   }
   b1 = sum_xy / sum_xx;
   //cout << b1 << endl;
@@ -54,6 +57,7 @@ void output(vector<float> nums, vector<int> days, string item){
   sub_days.push_back(days[days.size()-3]);
   //cout << sub_nums[1] << endl;
   //cout << nums.size() << endl;
+  CALLGRIND_START_INSTRUMENTATION;
   while(acc < 6.5 && sub_nums.size() != nums.size()){
     //cout << count << endl;
     //cout << "HIT" << endl;
@@ -68,6 +72,8 @@ void output(vector<float> nums, vector<int> days, string item){
     //cout << acc << ", " << pred << endl;
     count++;
   }
+  CALLGRIND_STOP_INSTRUMENTATION;
+  CALLGRIND_DUMP_STATS;
   //b1 = get_b1(nums, days);
   //b0 = get_b0(nums, days, b1);
   cout << item << ": ";
