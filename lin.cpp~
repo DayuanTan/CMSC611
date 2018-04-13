@@ -20,7 +20,7 @@ float get_b1(vector<float> nums, vector<int> days){
   }
   mean_nums /= (size);
   mean_days /= (size);
-  for(int i = 0; i < 1; i++){
+  for(int i = 0; i < size; i++){
     if(i == 0) CALLGRIND_START_INSTRUMENTATION;
     temp = days[i] - mean_days;
     temp2 = nums[i] - mean_nums;

@@ -1,0 +1,88 @@
+version: 1
+creator: callgrind-3.10.1
+pid: 2528
+cmd:  ./a.out
+part: 1
+
+
+desc: I1 cache: 32768 B, 64 B, 8-way associative
+desc: D1 cache: 32768 B, 64 B, 8-way associative
+desc: LL cache: 6291456 B, 64 B, 12-way associative
+
+desc: Timerange: Basic block 0 - 6
+desc: Trigger: Client Request
+
+positions: instr line
+events: Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw Bc Bcm Bi Bim
+summary: 0
+
+
+ob=(5) /home/paul878934/CMSC611/a.out
+fl=(1) /home/paul878934/CMSC611/lin.cpp
+fn=(0) get_b1(std::vector<float, std::allocator<float> >, std::vector<int, std::allocator<int> >)
+0x401720 24 1 0 0 1 0 0 1
++3 * 1 0 1 0 0 1 0 0 1
++7 * 1
++7 +1 1 1 0 0 1 0 0 1
++6 * 1
++3 * 1 1 0 1 0 0 1
++7 * 1
++3 * 1
++3 * 1 0 1 0 0 1 0 0 1
+cfi=(2) /usr/include/c++/4.8/bits/stl_vector.h
+cfn=(2) std::vector<int, std::allocator<int> >::operator[](unsigned long)
+calls=1 0x40282a 770 
+* * 11 5 3 2 1 0 2 1
++5 * 1 1 0 0 1 0 0 1
++2 * 1
++4 * 1 1
++8 * 1 0 1
++8 +1 1 1
++6 * 1
++3 * 1 1
++7 * 1
++3 * 1
++3 * 1 0 1
+cfi=(2)
+cfn=(4) std::vector<float, std::allocator<float> >::operator[](unsigned long)
+calls=1 0x40280a 770 
+* * 11 5 3
++5 * 1 1 0 1 1 0 1 1
++4 * 1 1
++8 * 1 0 1
++8 +1 1 1
++8 * 1 1
++8 * 1 1
++8 * 1
++4 * 1 0 1
++8 +2 1 1
++7 * 1 0 0 1 0 0 1 0 0 1
+
+fl=(2)
+fn=(2)
+0x40282a 770 1 0 1 1 0 0 1
++1 * 1
++3 * 1 0 1
++4 * 1 0 1
++4 +1 1 1
++4 * 1 1 0 0 1 0 0 1
++3 * 1 1 0 1 0 0 1
++4 * 1
++4 * 1
++3 * 1 1
++1 * 1 1
+
+fn=(4)
+0x40280a 770 1 0 1
++1 * 1
++3 * 1 0 1
++4 * 1 0 1
++4 +1 1 1
++4 * 1 1
++3 * 1 1
++4 * 1
++4 * 1
++3 * 1 1
++1 * 1 1
+
+totals: 51 22 12 6 4 2 6 4 2 1
