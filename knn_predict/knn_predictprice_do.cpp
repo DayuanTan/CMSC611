@@ -12,6 +12,7 @@
 #include <sstream> // for stringstream
 #include <string>
 #include <vector>
+#include <valgrind/callgrind.h>
 #include "math.h"
 
 using namespace std; // must add this line for vector
@@ -29,10 +30,11 @@ int str2int(string num){
     return res;  
 } 
 float compEuclideanDistFloat(vector<float> eightdayElem, vector<float> historyElem, float distanceMix){ //compute euclidean Distance
-        float sum = 0;
+        float sum = 0,temp;
         for (int i=0;i<=7;i++)
         {
-            sum += ( eightdayElem[i] - historyElem[i] ) * ( eightdayElem[i] - historyElem[i] );
+			temp = eightdayElem[i] - historyElem[i];
+            sum += temp * temp;
         }
         float distance = sqrt(sum);
         if (distance < distanceMix) 
@@ -315,7 +317,7 @@ int main()
                 }
                 vector<string>(volumes).swap(volumes);
             
-
+		CALLGRIND_START_INSTRUMENTATION;
                 //----------------------compute euclidean Distance-----------
                 float openDistanceMix2 = compEuclideanDistFloat(eightdayopensflt,opensflt,openDistanceMix);
                 if (openDistanceMix2 != openDistanceMix) 
@@ -347,6 +349,8 @@ int main()
                     volumeDistanceMix = volumeDistanceMix2;
                     matchedvolumesflt = volumesflt;
                 }
+		CALLGRIND_STOP_INSTRUMENTATION;
+		CALLGRIND_DUMP_STATS;
             }else 
             {
                 continue;
