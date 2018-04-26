@@ -12,7 +12,6 @@
 #include <sstream> // for stringstream
 #include <string>
 #include <vector>
-#include <valgrind/callgrind.h>
 #include "math.h"
 
 using namespace std; // must add this line for vector
@@ -30,11 +29,10 @@ int str2int(string num){
     return res;  
 } 
 float compEuclideanDistFloat(vector<float> eightdayElem, vector<float> historyElem, float distanceMix){ //compute euclidean Distance
-        float sum = 0,temp;
+        float sum = 0;
         for (int i=0;i<=7;i++)
         {
-			temp = eightdayElem[i] - historyElem[i];
-            sum += temp * temp;
+            sum += ( eightdayElem[i] - historyElem[i] ) * ( eightdayElem[i] - historyElem[i] );
         }
         float distance = sqrt(sum);
         if (distance < distanceMix) 
@@ -53,7 +51,8 @@ int main()
         
 
     // read 8 days prices changes before the day we want to predict
-    ifstream eightdayfin("9days_8changes_4predict.csv");
+    //ifstream eightdayfin("9days_8changes_4predict.csv");
+    ifstream eightdayfin("9days_8changes_4predict_partial_companies.csv");// 5% companies randomly selected
     string line;
     vector<float> eightdayopensflt;
     vector<float> eightdayhighsflt;
@@ -204,7 +203,8 @@ int main()
 
         //----------------------iterate process history 9 price changes sets-----------
 
-        ifstream fin("all_stockschanges_5yr.csv"); //open filestream
+        //ifstream fin("all_stockschanges_5yr.csv"); //open filestream
+        ifstream fin("all_stockschanges_5yr_5perct.csv"); //open filestream // 5% companies randomly selected
         while (getline(fin, line))   //read a line by '\n'; stop when meet EOF
         {
             istringstream sin(line); //read whole line into stringstream 'sin'
@@ -317,7 +317,7 @@ int main()
                 }
                 vector<string>(volumes).swap(volumes);
             
-		CALLGRIND_START_INSTRUMENTATION;
+
                 //----------------------compute euclidean Distance-----------
                 float openDistanceMix2 = compEuclideanDistFloat(eightdayopensflt,opensflt,openDistanceMix);
                 if (openDistanceMix2 != openDistanceMix) 
@@ -349,8 +349,6 @@ int main()
                     volumeDistanceMix = volumeDistanceMix2;
                     matchedvolumesflt = volumesflt;
                 }
-		CALLGRIND_STOP_INSTRUMENTATION;
-		CALLGRIND_DUMP_STATS;
             }else 
             {
                 continue;
